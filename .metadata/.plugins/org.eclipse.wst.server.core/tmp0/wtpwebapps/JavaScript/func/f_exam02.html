@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	// 함수를 호출할 경우 생성되는 실행 컨텍스트 영역
+	/* var var1 = 10;
+	
+	function func(){
+		var var1 = 20;
+		console.log("var1: " + var1);
+	}
+	
+	console.log("var2: " + var1);
+	
+	func(); */
+	
+	/* var value = "value1";
+	
+	function printFunc(){
+		var value = "value2";
+		
+		function printValue(){
+			return value;
+		}
+		
+		console.log(printValue());
+	}
+	
+	printFunc(); */
+	
+/* 	var value = "value1";
+	
+	function printValue(){
+		return value;
+	}
+	
+	function printFunc(func){
+		var value = "value2";
+		console.log(func());
+	}
+	
+	printFunc(printValue); */
+	
+	// 클로저
+	/* function outerFunc() {
+		var x = 10;
+		
+		var innerFunc = function(){
+			console.log(x)
+		}
+		
+		return innerFunc;
+	}
+	
+	var inner = outerFunc();
+	inner(); */
+	
+	function outer(arg1, arg2){
+		var local = 8;
+		
+		function inner(innerArg){
+			console.log((arg1 + arg2)/(innerArg + local));			
+		}
+		return inner;
+	}
+	
+	var p = outer(10,8);
+	p(2);
+	
+	outer(10,8)(2);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

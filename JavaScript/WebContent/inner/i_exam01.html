@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var arr1 = [];
+	
+	arr1[0] = "길동";
+	arr1[1] = "진호";
+	arr1[2] = "상혁";
+	
+	var arr2 = new Array(3);
+	
+	arr2[0] = "택수";
+	arr2[1] = "요한";
+	arr2[2] = "희영";
+	
+	var arr3 = new Array("가영", "승엽", "주은");
+	
+	// 배열 => 문자열
+	document.write(arr1.toString() + "<br>");	// ,를 기준
+	document.write(arr1.join(" ") + "<br>");	// 본인 기준
+	
+	// 배열추가
+	var arr4 = arr3.concat(arr2);
+	document.write(arr4.toString() + "<br>");
+	//가영,승엽,주은,택수,요한,희영
+	
+	// 배열 부분추출(java: subString())
+	var arr5 = arr4.slice(1,4);
+	document.write(arr5.toString() + "<br>");
+	
+	// 배열 부분삭제(splice(인덱스, 개수))
+/* 	var arr6 = arr4.splice(1,3);
+	document.write(arr4.toString() + "<br>");
+	document.write(arr6.toString() + "<br>"); */
+	
+	// 정렬
+	var arr7 = arr4.sort();	// 오름차순
+	document.write(arr7.toString() + "<br>");
+	
+	// 내림차순
+	var array = [52,39,11,1,98,65];
+	array.sort(function(a, b) {
+		if(a < b){
+			return 1;
+		}else if(a >b){
+			return -1;
+		}else{
+			0;
+		}
+		//a < b? 1: 0;
+	});
+	
+	document.write(array.toString() + "<br>");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="httpRequest.js"></script>
+<script type="text/javascript">
+
+	window.onload = function(){
+		sendRequest("member_json.jsp", "", veiwInfo, "GET");
+	}
+	
+	function veiwInfo(){
+		if(httpRequest.readyState == 4){	// httpRequest.readyState = 1,2,3은 전송중
+			if(httpRequest.status == 200){	// httpRequest.readyState = 4 전송완료
+				alert("서버응답: " + httpRequest.responseText);
+			}
+		}
+	}
+	
+	
+</script>
+</head>
+<body>
+	<div id="list"></div>
+</body>
+</html>

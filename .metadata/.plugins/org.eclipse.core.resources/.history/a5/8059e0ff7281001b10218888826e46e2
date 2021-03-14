@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="fmt">
+		<input type="text" name="display"><br>
+		<input type="button" name="start" value="시작" onclick="startClock()">
+		<input type="button" name="stop" value="종료" onclick="stopClock()">
+	
+	</form>
+</body>
+</html>

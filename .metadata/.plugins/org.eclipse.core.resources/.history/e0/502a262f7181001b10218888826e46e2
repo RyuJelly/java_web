@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 배열 생성 후 이미지 7개 경로를 배열에 추가
+	var arr1 = new Array(7);
+	arr1[0] = "../images/pic" + 0 + ".jpg";
+	
+/* 	for(var i in arr1){
+		document.write(i)
+		//arr1[i] = "../images/pic" + i + ".jpg";		
+	} */
+	
+	window.onload = function(){
+		// 0~6 난수 발생
+		var idx = Math.floor(Math.random()*7);
+		
+		var img = document.getElementById("img");
+		//img.src = arr1[idx];
+	}
+
+</script>
+</head>
+<body>
+	<img id="img" alt="" src="">
+</body>
+</html>

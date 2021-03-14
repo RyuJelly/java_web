@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="httpRequest.js"></script>
+<script type="text/javascript">
+	
+	function hello(){
+		var params = "name=" 
+			+ encodeURIComponent(document.fmt.name.value);
+		
+		sendRequest("hello.jsp", params, helloResult, "GET");
+	}
+
+	function helloResult(){
+		if(httpRequest.readyState == 4){
+			if(httpRequest.status == 200){
+				alert("서버응답: " + httpRequest.responseText);
+			}
+		}
+	}
+
+</script>
+</head>
+<body>
+	<form name="fmt">
+		<input type="text" name="name">
+		<input type="button" value="전송" onclick="hello()">
+	</form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 문자열.match(정규표현식) => 매칭된 결과(문자열)
+/* 	var result = 'sports'.match(/sp/);
+	
+	if(result){
+		alert("포함");
+	} */
+	
+	//ReqExp.exec('문자열') => 매칭된 결과(문자열)
+/* 	var str = "ffjfJSssss js fkdkdJS JS ffffjs"
+	var re = /JS/ig;	// i: 소대문자 구분없이, g: 전역검사
+	var result = re.exec(str);
+	
+	while(result){
+		document.write(result + "<br>");
+		result = re.exec(str);
+	}	 */
+	
+	// 퀴즈
+	/* var str = "This is a data : March 11 2021";
+	var re = /\w*\s\d+\s\d+/;
+	var result = str.match(re);
+	
+	document.write(result); */
+	
+	// 문자열.replace(정규표현식, 변경문자열);
+	/* var str = "Java--JavaScript";
+	var re = /(\w+)-*(\w+)/;
+	var result = str.replace(re, "$2-$1");
+	document.write(result); */
+	
+	// 퀴즈: sw => 소프트웨어
+/* 	var str = "오늘 우리는 SW세상에서 살고 있다. SW가 매우 중용한 시기이다. 그래서 SW 열심히 공부해야 겠다.";
+	var result = str.replace(/SW/g, "소프트웨어");	
+	document.write(result); */
+
+	// 정상: dolsam77@nate.com
+	// 실패: 323dolsam77@nate.com
+	// 실패: dolsam77nate.com
+	// 실패: dolsam77@nate.comcomcom
+	var str = "dolsam77@nate.com";
+	var re = /^[a-zA-Z]+(\w)*@[a-z]+\.\w{2,3}$/;
+	var result = re.test(str);	// true, false
+	
+	if(result){
+		alert("성공");
+	}else{
+		alert("실패");
+	}
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

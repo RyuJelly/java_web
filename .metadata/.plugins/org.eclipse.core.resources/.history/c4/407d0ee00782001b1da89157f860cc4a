@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 문자열.match(정규표현식) => 매칭된 결과(문자열)
+/* 	var result = 'sports'.match(/sp/);
+	
+	if(result){
+		alert("포함");
+	} */
+	
+	//ReqExp.exec('문자열') => 매칭된 결과(문자열)
+/* 	var str = "ffjfJSssss js fkdkdJS JS ffffjs"
+	var re = /JS/ig;	// i: 소대문자 구분없이, g: 전역검사
+	var result = re.exec(str);
+	
+	while(result){
+		document.write(result + "<br>");
+		result = re.exec(str);
+	}	 */
+	
+	// 퀴즈
+	var str = "This is a data : March 11 2021";
+	var re = /^March/;
+	var result = re.exec(str);
+	
+	document.write(result);
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	var data = 10;
+	
+	window.onload = function() {
+		var btn = document.getElementById("btn");
+		
+		btn.onclick = function(){
+			this.data = 20;
+			data = 30;
+			
+			console.log("1. data: " + data);
+			console.log("2. this.data: " + this.data);
+			console.log("1. window.data: " + window.data);
+		}
+	}
+
+</script>
+</head>
+<body>
+	<button id="btn">버튼</button>
+</body>
+</html>

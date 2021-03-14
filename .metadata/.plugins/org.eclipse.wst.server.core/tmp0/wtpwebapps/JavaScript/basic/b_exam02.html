@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/* JavaScript 자료형 */
+	// 숫자형(number)
+	var intNum = 10;
+	var floatNum = 3.14;
+	
+	console.log(typeof intNum);
+	console.log(typeof floatNum);
+	
+	// 문자형(string)
+	var sinS = 'single';
+	var doubleS = 'double';
+	
+	console.log(typeof sinS);
+	console.log(typeof doubleS);
+
+	// 논리형(boolean)
+	var boolVar = true;	
+	console.log(typeof boolVar);
+	
+	// undefined
+	var emptyVar	
+	console.log(typeof emptyVar);
+	
+	// null(object)
+	var nullVar = null;
+	console.log(typeof nullVar);
+	
+	// 함수(function)
+	var func = function(){}
+	console.log(typeof func);
+	
+	// 형변환
+	console.log(typeof intNum);	// => number
+	intNum = "안녕";
+	console.log(typeof intNum);	// => string
+	
+	// 문자열 => 정수형: eval(), parseInt(), Number()
+	var num = "15변수";
+	num = parseInt(num);
+	var num2 = num + 10;
+	console.log(num2);
+	
+/* 	var num3 = "15";
+	if(num3 === 15){
+		alert("같다")
+	}else{
+		alert("다르다")
+	} */
+	
+	var myVar = "전역변수";
+	
+	function myFun(){
+		var myVar = "지역변수";
+		console.log("지역변수: " + myVar);
+		console.log("전역변수: " + window.myVar);
+		// 일반함수 안에서의 this는 윈도우 객체
+		console.log("전역변수: " + this.myVar);
+	}
+	
+	myFun();
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

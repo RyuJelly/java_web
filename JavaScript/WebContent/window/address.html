@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	window.onload = function(){
+		var links = document.getElementsByTagName("a");
+		
+		for(var i=0; i<links.length; i++){
+			links[i].onclick = function(){
+				window.opener.document.fmt.addr.value = this.innerHTML;
+				// window.opener => 부모 윈도우
+				
+				self.close();
+			}
+		}
+	}
+
+</script>
+</head>
+<body>
+	<ul>
+		<li><a href="#">서울시 강남구 대치동</a></li>
+		<li><a href="#">서울시 금천구 가산동</a></li>
+		<li><a href="#">경기도 안양시 안양동</a></li>
+	</ul>
+</body>
+</html>

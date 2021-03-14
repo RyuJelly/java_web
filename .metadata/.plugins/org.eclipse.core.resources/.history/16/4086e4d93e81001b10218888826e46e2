@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 사용자 정의 객체
+	
+	// 1. Object 객체 이용 => 동적 프로퍼티 추가 가능
+	var obj = new Object();
+	obj.name = "홍길동";
+	obj.age = 20;
+	
+	console.log("이름: " + obj.name);
+	console.log("나이: " + obj.age);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

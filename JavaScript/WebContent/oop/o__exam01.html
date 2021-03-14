@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 사용자 정의 객체
+	
+	// 1. Object 객체 이용 => 동적 프로퍼티 추가 가능
+	var obj = new Object();
+	obj.name = "홍길동";
+	obj.age = 20;
+	
+	console.log("이름: " + obj.name);
+	console.log("나이: " + obj.age);
+
+	// 2. 리터럴 형식 객체
+	var a = {};
+	var obj2 = {
+		name: "박길동",
+		age: 30,
+		display: function(){
+			console.log(this.name);
+		}
+	};
+	
+	obj2.display();
+	
+	// 함수도 객체이다.
+	function add(x,y){
+		return x + y;
+	}
+	
+	add.result = add(100, 200);
+	add.status = 'ok';
+	
+	console.log(add.result);
+	console.log(add.status);
+	
+	//퀴즈> 리터럴형식으로 빈객체를 생성후
+	//		동적프로퍼티와 함수를 등록 후 호출해서 사용하는 예제를 구현하시오.
+	
+	var obj3 = {};
+	obj3.name = "퀴즈";
+	obj3.func = function(){
+		return this.name;
+	};
+	
+	console.log(obj3.func());
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

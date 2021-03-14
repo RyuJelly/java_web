@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	var timeId;
+	var running = false;
+	
+	function show(){
+		var now = new Date();
+		var hour = now.getHours();
+		var minute = now.getMinutes();
+		var seconds = now.getSeconds();		
+		var timeValue = hour + '시 ' + minute + '분 ' + seconds + '초';
+		
+		document.fmt.display.value = timeValue;
+		// setTimeout("함수", 실행주기);
+		timeId = setTimeout("show()", 1000);
+	}
+	
+	function startClock(){
+		if(running){
+			return;
+		}
+		show();
+		running = true;
+	}
+	
+	function stopClock(){
+		if(running){
+			// clearTimeout(setTimeout);
+			clearTimeout(timeId);
+			running = false;
+		}
+	}
+	
+</script>
+</head>
+<body>
+	<form name="fmt">
+		<input type="text" name="display"><br>
+		<input type="button" name="start" value="시작" onclick="startClock()">
+		<input type="button" name="stop" value="종료" onclick="stopClock()">
+	
+	</form>
+</body>
+</html>

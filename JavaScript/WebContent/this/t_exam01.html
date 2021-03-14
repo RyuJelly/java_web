@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 일반함수 안에서 this는 window객체: 전역변수 이다.
+	var data = 10;
+	
+	function(){
+		this.data = 20;
+		data = 30;
+		
+		console.log("1. data: " + data);
+		console.log("2. this.data: " + this.data);
+		console.log("1. window.data: " + window.data);
+	}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

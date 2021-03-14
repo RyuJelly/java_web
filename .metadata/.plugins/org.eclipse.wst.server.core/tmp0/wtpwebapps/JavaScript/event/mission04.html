@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// onmouseover
+	// onmouseout
+	
+	function over(){
+		document.getElementById("default").src = this.src;
+	}
+	
+	window.onload = function(){
+		var defaultImg = document.getElementById("default").src;
+		
+		var imgs = document.getElementsByTagName("img");
+		for(var i=0; i<imgs.length; i++){
+			imgs[i].onmouseover = over;
+			imgs[i].onmouseout = function(){
+				document.getElementById("default").setAttribute("src", defaultImg);
+			}
+		}
+	}
+	
+	
+</script>
+</head>
+
+<body>
+<center>
+	<h2>고양이 앨범</h2>
+	<img id="default" src="../images/cat0.jpg" border="1" width="600" height="450"></img>
+	<br/><br/><br/>
+	
+	<img src="../images/cat1.jpg" width="70" height="70" border="1" hspace="10" 
+			vspace="10" >
+	<img src="../images/cat2.jpg" width="70" height="70" border="1" hspace="10" 
+			vspace="10">
+	<img src="../images/cat3.jpg" width="70" height="70" border="1" hspace="10" 
+			vspace="10">
+	
+	
+</center>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	var total = 0;
+	var pre = 0;
+	
+	function calc(){
+		// type => checkbox | radio 다른연산
+		// obj.checked == true
+		
+		if(this.type == 'checkbox'){
+			if(this.checked){
+				total += parseInt(this.value);
+			}else{
+				total -= parseInt(this.value);
+			}
+			
+		}else{
+			total -= pre;
+			total += parseInt(this.value);
+			pre = parseInt(this.value);
+		}
+		
+		document.fmt.result.value = total;
+	}
+	
+	
+	window.onload = function(){
+		var inputs = document.getElementsByTagName("input");
+		for(var i=0; i<inputs.length; i++){
+			inputs[i].onclick = calc;
+		}
+	}
+	
+</script>
+</head>
+<body>	
+<form name="fmt">
+	두부 400원
+	<input type="checkbox" value="400" >
+	콩나물 150원
+	<input type="checkbox" value="150">
+	간장 1500원
+	<input type="checkbox" value="1500">
+	<br><br>
+	퀵 서비스
+	<input type="radio" name="del" value="5000">
+	택배
+	<input type="radio" name="del" value="2500">
+	<br><br>
+	
+	지불하실 금액은 : <input type="text" name="result">
+	
+	
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

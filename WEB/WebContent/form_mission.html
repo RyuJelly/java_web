@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="" method="get/post">
+		<fieldset>
+			<ol>
+				<li>
+					<label for="name">이름</label>
+					<input type="text" name="userName" id="name" autofocus="autofocus"
+					placeholder="ex)홍길동">
+				</li>
+				<li>
+					<label for="id">아이디</label>
+					<input type="text" name="userId" id="id">
+					<input type="submit" value="중복확인">
+				</li>
+				<li>
+					<label for="pw">비밀번호</label>
+					<input type="password" name="userPW" id="pw">
+				</li>
+				<li>
+					<label for=checkPW>비밀번호 확인</label>
+					<input type="password" name="userCPW" id="checkPW">
+				</li>
+				<li>
+					<label for="email">이메일</label>
+					<input type="text" name="userEmail" id="email">@
+					<select>
+						<option value="@naver.com">naver.com</option>
+						<option value="@daum.net">daum.net</option>
+						<option value="@hanmail.net">hanmail.net</option>
+						<option value="@gmail.com">gmail.com</option>
+					</select>
+				</li>
+				<li>
+					<label for="phoneNum">연락처</label>
+					<input type="text" name="" id="phoneNum" placeholder="010-1234-1234">
+				</li>
+				<li>
+					<label>메일수신여부</label>
+					<input type="radio" name="checkEmail" value="수신 동의"> 동의
+					<input type="radio" name="checkEmail" value="수신 미동의">비동의
+				</li>
+				<li>
+					<label>관심분야</label>
+					<input type="checkbox" name="interest" value="농구">농구
+					<input type="checkbox" name="interest" value="축구">축구
+					<input type="checkbox" name="interest" value="야구">야구
+					<input type="checkbox" name="interest" value="배구">배구
+					<input type="checkbox" name="interest" value="테니스">테니스
+				</li>
+			</ol>
+			<ul>
+				<li>
+					<input type="submit" value="전송">
+					<input type="reset" value="취소">
+				</li>
+			</ul>
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// ECMAScript6
+	
+/* 	var variableA = 52;
+	let variableB = 152;
+	const constantC = 100;
+	
+	console.log(variableA);
+	console.log(variableB);
+	console.log(constantC); */
+	
+	//---------------------------------------
+	
+	/* {
+		// scope A
+		var variableA = 52;
+	}
+	
+	{
+		// scope B
+		console.log(variableA);
+	}
+	
+	// 전면 스코프
+	console.log(variableA); */
+	
+	//---------------------------------------
+/* 	{
+		// scope A
+		let variableA = 52;
+	}
+	
+	{
+		// scope B
+		console.log(variableA);
+	}
+	
+	// 전면 스코프
+	console.log(variableA); */
+	
+	//---------------------------------------
+
+	for(var i=0; i<3; i++){
+		setTimeout(() => {
+			alert(i);
+		}, 1000*i)
+	}
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

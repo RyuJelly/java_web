@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	var data = "Global data";
+	
+	var obj1 = {'data' : 'obj1 data'};
+	var obj2 = {'data' : 'obj2 data'};
+	
+	function func(){
+		console.log(this.data);
+	}
+	
+	// func();
+	func.call(obj1);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

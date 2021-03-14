@@ -1,0 +1,82 @@
+
+3월 05, 2021 10:25:55.35 NEW SESSION
+3월 05, 2021 10:25:55.35 [3120:8012:0305/102555.280:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 05, 2021 10:25:55.36 [3120:8012:0305/102555.280:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 05, 2021 10:25:55.37 [3120:8012:0305/102555.280:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 05, 2021 10:25:55.38 [3120:8012:0305/102555.280:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+3월 05, 2021 10:26:10.21 [13712:19688:0305/102610.210:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 05, 2021 10:26:10.23 [13712:19688:0305/102610.211:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 05, 2021 10:26:10.24 [13712:19688:0305/102610.211:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 05, 2021 10:26:10.25 [13712:19688:0305/102610.211:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+3월 05, 2021 10:26:40.21 [20416:14328:0305/102640.212:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 05, 2021 10:26:40.22 [20416:14328:0305/102640.212:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 05, 2021 10:26:40.23 [20416:14328:0305/102640.212:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 05, 2021 10:26:40.24 [20416:14328:0305/102640.212:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+3월 05, 2021 10:26:47.12 [1728:6184:0305/102647.122:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 05, 2021 10:26:47.13 [1728:6184:0305/102647.123:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 05, 2021 10:26:47.14 [1728:6184:0305/102647.123:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 05, 2021 10:26:47.15 [1728:6184:0305/102647.123:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+
+3월 05, 2021 10:28:31.44 NEW SESSION
+3월 05, 2021 10:28:31.44 [21728:21672:0305/102831.445:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 05, 2021 10:28:31.45 [21728:21672:0305/102831.450:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 05, 2021 10:28:31.47 [21728:21672:0305/102831.450:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 05, 2021 10:28:31.48 [21728:21672:0305/102831.450:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+3월 05, 2021 10:30:52.16 [1212:7692:0305/103052.162:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 05, 2021 10:30:52.17 [1212:7692:0305/103052.163:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\wima9\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 05, 2021 10:30:52.18 [1212:7692:0305/103052.163:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 05, 2021 10:30:52.19 [1212:7692:0305/103052.163:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+3월 05, 2021 10:31:23.67 [21168:13268:0305/103123.677:ERROR:device_event_log_impl.cc(211)] [10:31:23.677] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 05, 2021 15:19:36.40 [21168:10000:0305/151936.406:ERROR:database.cc(1707)] Passwords sqlite error 2067, errno 0: UNIQUE constraint failed: logins.origin_url, logins.username_element, logins.username_value, logins.password_element, logins.signon_realm, sql: INSERT INTO logins (origin_url, action_url, username_element, username_value, password_element, password_value, submit_element, signon_realm, date_created, blacklisted_by_user, scheme, password_type, times_used, form_data, date_synced, display_name, icon_url, federation_url, skip_zero_click, generation_upload_status, possible_username_pairs, id, date_last_used, moving_blocked_for) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+
+3월 08, 2021 09:15:01.51 NEW SESSION
+3월 08, 2021 09:15:01.51 [21240:11216:0308/091501.507:ERROR:device_event_log_impl.cc(211)] [09:15:01.508] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 08, 2021 09:47:58.50 [8496:6068:0308/094758.506:ERROR:device_event_log_impl.cc(211)] [09:47:58.506] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 08, 2021 09:48:19.83 [10396:19232:0308/094819.830:ERROR:device_event_log_impl.cc(211)] [09:48:19.830] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 08, 2021 20:16:00.77 [14232:13780:0308/201600.771:ERROR:device_event_log_impl.cc(211)] [20:16:00.771] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 08, 2021 20:16:00.87 [14232:13780:0308/201600.878:ERROR:device_event_log_impl.cc(211)] [20:16:00.878] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 08, 2021 20:27:42.59 [14232:13780:0308/202742.593:ERROR:CONSOLE(0)] "TypeError: Cannot read property 'isAnonymousInlineStyleSheet' of null", source:  (0)
+3월 08, 2021 20:29:45.86 [14232:13780:0308/202945.866:ERROR:CONSOLE(0)] "TypeError: Cannot read property 'isAnonymousInlineStyleSheet' of null", source:  (0)
+3월 08, 2021 21:02:50.35 [12568:5628:0308/210250.350:ERROR:device_event_log_impl.cc(211)] [21:02:50.350] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 08, 2021 21:02:50.40 [12568:5628:0308/210250.352:ERROR:device_event_log_impl.cc(211)] [21:02:50.352] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 08, 2021 21:04:30.59 [12568:5628:0308/210430.599:ERROR:CONSOLE(0)] "TypeError: Cannot read property 'isAnonymousInlineStyleSheet' of null", source:  (0)
+3월 08, 2021 21:10:33.76 [12568:5628:0308/211033.764:ERROR:CONSOLE(0)] "TypeError: Cannot read property 'isAnonymousInlineStyleSheet' of null", source:  (0)
+3월 08, 2021 21:11:26.91 [1564:20652:0308/211126.907:ERROR:device_event_log_impl.cc(211)] [21:11:26.907] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 08, 2021 21:11:26.93 [1564:20652:0308/211126.925:ERROR:device_event_log_impl.cc(211)] [21:11:26.925] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 08, 2021 21:11:37.73 [20864:23492:0308/211137.732:ERROR:device_event_log_impl.cc(211)] [21:11:37.732] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 08, 2021 21:11:37.74 [20864:23492:0308/211137.734:ERROR:device_event_log_impl.cc(211)] [21:11:37.734] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 08, 2021 21:17:00.50 [20992:20976:0308/211700.499:ERROR:device_event_log_impl.cc(211)] [21:17:00.500] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 08, 2021 21:17:00.52 [20992:20976:0308/211700.502:ERROR:device_event_log_impl.cc(211)] [21:17:00.503] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+
+3월 09, 2021 09:14:56.54 NEW SESSION
+3월 09, 2021 09:14:56.54 [20072:21796:0309/091456.545:ERROR:device_event_log_impl.cc(211)] [09:14:56.544] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 09, 2021 09:20:25.45 [20424:11436:0309/092025.450:ERROR:device_event_log_impl.cc(211)] [09:20:25.451] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 09, 2021 09:25:43.27 [7920:7052:0309/092543.277:ERROR:device_event_log_impl.cc(211)] [09:25:43.277] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 09, 2021 09:33:32.06 [7920:7052:0309/093332.060:ERROR:CONSOLE(0)] "TypeError: Cannot read property 'isAnonymousInlineStyleSheet' of null", source:  (0)
+
+3월 09, 2021 09:36:11.55 NEW SESSION
+3월 09, 2021 09:36:11.55 [4620:18468:0309/093611.550:ERROR:device_event_log_impl.cc(211)] [09:36:11.551] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 09, 2021 09:39:41.70 [4620:18468:0309/093941.706:ERROR:CONSOLE(0)] "TypeError: Cannot read property 'isAnonymousInlineStyleSheet' of null", source:  (0)
+3월 09, 2021 09:43:01.36 [2064:17576:0309/094301.365:ERROR:device_event_log_impl.cc(211)] [09:43:01.365] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 09, 2021 09:46:54.77 [13200:8872:0309/094654.769:ERROR:device_event_log_impl.cc(211)] [09:46:54.770] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 09, 2021 09:47:29.62 [20408:8656:0309/094729.623:ERROR:device_event_log_impl.cc(211)] [09:47:29.624] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 09, 2021 10:03:24.29 [9168:8892:0309/100324.297:ERROR:device_event_log_impl.cc(211)] [10:03:24.298] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 09, 2021 10:06:27.40 [22548:20280:0309/100627.403:ERROR:device_event_log_impl.cc(211)] [10:06:27.403] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 09, 2021 10:08:22.46 [20992:7780:0309/100822.459:ERROR:device_event_log_impl.cc(211)] [10:08:22.459] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+
+3월 10, 2021 09:40:09.04 NEW SESSION
+3월 10, 2021 09:40:09.04 [15980:16368:0310/094009.000:ERROR:device_event_log_impl.cc(211)] [09:40:09.000] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 10, 2021 10:21:31.15 [20880:23276:0310/102131.150:ERROR:device_event_log_impl.cc(211)] [10:21:31.149] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 10, 2021 11:08:28.47 [22876:18828:0310/110828.478:ERROR:device_event_log_impl.cc(211)] [11:08:28.478] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 10, 2021 12:19:49.79 [1688:21300:0310/121949.791:ERROR:device_event_log_impl.cc(211)] [12:19:49.791] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 10, 2021 15:24:37.58 [3456:12840:0310/152437.584:ERROR:device_event_log_impl.cc(211)] [15:24:37.583] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+
+3월 11, 2021 09:36:26.06 NEW SESSION
+3월 11, 2021 09:36:26.06 [19872:5248:0311/093626.041:ERROR:device_event_log_impl.cc(211)] [09:36:26.040] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 11, 2021 10:24:27.24 [11684:9072:0311/102427.247:ERROR:device_event_log_impl.cc(211)] [10:24:27.247] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+
+3월 12, 2021 10:04:26.17 NEW SESSION
+3월 12, 2021 10:04:26.17 [23068:16316:0312/100426.146:ERROR:device_event_log_impl.cc(211)] [10:04:26.146] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 12, 2021 11:07:24.91 [7644:16052:0312/110724.914:ERROR:device_event_log_impl.cc(211)] [11:07:24.914] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 12, 2021 12:23:56.60 [14204:22408:0312/122356.604:ERROR:device_event_log_impl.cc(211)] [12:23:56.603] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 12, 2021 12:37:19.55 [5832:12800:0312/123719.552:ERROR:device_event_log_impl.cc(211)] [12:37:19.553] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.

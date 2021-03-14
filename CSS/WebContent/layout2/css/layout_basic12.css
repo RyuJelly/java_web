@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+#wrapper{
+	background: url("../images/common/wrap_bg.jpg")no-repeat top center;
+}
+
+#header{
+	background: url("../images/common/bg_menubox.png")no-repeat 0 0;
+	width: 940px;
+	height: 105px;
+}
+
+#infoMenu{
+	text-align: right;
+	margin-right: 80px;
+	padding: 0px 3px 0px 8px;
+}
+
+#infoMenu li{
+	display: inline;
+	padding: 0px 3px 0px 8px;
+	border-left: 1px dotted gray;
+}
+
+.logo{
+	position: absolute;
+	top: 36px;
+	left: 30px;
+	margin-left: 10px;
+}
+
+#navigation{
+	width: 842px;
+	height: 43px;
+	background: url("../images/common/sitemenu_bg.gif")no-repeat 0 0;
+	margin-top: 15px;
+}
+
+#navigation li{
+	float: left;
+}
+
+#navigation li.first{
+	margin-left: 217px;
+}
+
+#naviSub01{
+	position: absolute;
+	top: 77px;
+}
+
+#contents{
+	background: url("../images/common/contents_box.png")no-repeat 0 0;
+	width: 940px;
+	height: 400px;
+}
+
+#subWrap{
+	width: 190px;
+	height: 200px;
+	background: url("../images/common/subwrap_bg.gif")no-repeat 0 0;
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+#subWrap h2{
+	border-bottom: 2px solid orange;
+	height: 20px;
+}
+
+#subWrap ul{
+	margin-bottom: 30px;
+}
+
+#subWrap li{
+	margin: 10px 20px 0px 20px;
+	height: 30px;
+	border-bottom: 2px solid orange;
+}
+
+li.select{
+	border-bottom: 10px solid orange:
+}
+
+.search fieldset{
+	display: inline;
+	margin-left: 20px;
+	height: 40px;
+	background: url("../images/common/bg_search.gif")no-repeat 0 0;
+}
+
+#search{
+	width: 80px;
+}
+
+#contentsWrap{
+	width: 620px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+#contentsWrap h1{
+	margin-bottom: 30px;
+	border-bottom: 1px dotted gray;
+}
+
+.depth{
+	float: right;
+}
+
+#quick{
+	width: 50px;
+	height: 250px;
+	background: url("../images/common/quick_bg.gif")no-repeat 0 0;
+	float: right;
+}
+#quick ul{
+	text-align: center;
+	padding: 5px;
+}
+
+#quick li{
+	margin-bottom: 20px;
+}
+
+
+div#footer{
+	width: 940px;
+	height: 105px;
+	margin-left: 30px;
+	background: url("../images/common/footerbg.gif")no-repeat 0 0;
+}
+
+ul#guideMenu{
+	background: url("../images/common/bg_guide_menu_2.gif")no-repeat 0 0;
+}
+
+#guideMenu > li{
+	display: inline;
+	border-left: 1px solid;
+}

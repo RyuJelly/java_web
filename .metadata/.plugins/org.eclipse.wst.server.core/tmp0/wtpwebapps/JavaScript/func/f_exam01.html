@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	//console.log("add: " + add(10,20));
+	//console.log("add2: " + add2(10,20));
+	//console.log(typeof add2);
+	
+	// 선언적 함수
+	function add(a,b){
+		var sum = a + b;
+		return sum;
+	}
+	
+	// 익명함수
+	var add2 = function(a,b){
+		var sum = a * b;
+		return sum;
+	}
+	
+	// 변수에 함수를 전달할 수 있다.
+	var plus = add;
+	var plus2 = add2();
+	//console.log(plus(10,5));
+	//console.log(plus2(10,5));
+	
+	// 함수의 인자에 함수를 전달할 수 있다.
+	var foo = function(func){
+		if(typeof func == 'function'){
+			func();
+		}
+	}
+
+	foo(function(){
+		console.log("파라미터에 함수를 호출하는 예제");
+	});
+
+	// 함수 안에서 함수를 리턴하여 리턴된 함수를 호출하는 예제 구현	
+	var foo2 = function(){
+		return function(){
+			console.log("함수를 리턴하는 예제");
+		}
+	};
+	
+	var p = foo2();
+	p();
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

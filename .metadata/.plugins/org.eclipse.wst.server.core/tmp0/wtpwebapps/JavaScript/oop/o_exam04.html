@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	// Rectangle 생성자함수를 만들고 넓이를 구하여 보자.(prototype: getArea())
+/* 	function Rectangle(w, h){
+		// 가로, 세로
+		this.w = w;
+		this.h = h;
+	}
+	
+	Rectangle.prototype = {
+			getArea: function(){
+				return this.w * this.h;
+			}
+	}
+	
+	// 객체생성
+	var Rectangles = [];
+	Rectangles.push(new Rectangle(10, 10));
+	Rectangles.push(new Rectangle(20, 30));	
+	
+	// 메서드 호출: 넓이 출력
+	for(var i in Rectangles){
+		document.write(Rectangles[i].getArea() + "<br>");
+	} */
+	
+	//----------------------------------------------------
+	
+	/* function Rectangle(w, h){
+		// 가로, 세로
+		var width = w;
+		var height = h;
+		
+		this.setWidth = function(w){
+			width = w;
+		}
+		this.getWidth = function(){
+			return width;
+		}
+		this.setHeight = function(h){
+			height = h;
+		}
+		this.getHeight = function(){
+			return height;
+		}
+	}
+	
+	Rectangle.prototype = {
+			getArea: function(){
+				return this.getWidth() * this.getHeight();
+			}
+	}
+	
+	// 객체생성
+	var rectangle = new Rectangle(5, 7);
+	rectangle.setWidth(10);
+	
+	// 메서드 호출: 넓이 출력
+	console.log(rectangle.getArea()); */
+	
+	//-------------------------------------------------------
+	
+	class Rectangle{
+		constructor(w, h){
+			this.width = w;
+			this.height = h;
+		}
+		
+		setWidth(w){
+			this.width = w;
+		}
+		getWidth(){
+			return this.width;
+		}
+		setHeight(h){
+			this.height = h;
+		}
+		getHeight(){
+			return this.height;
+		}
+		
+		getArea(){
+			return this.width * this.height;
+		}
+	}
+	
+	/* // 객체생성
+	var rectangle = new Rectangle(5, 7);
+	rectangle.setWidth(10);	
+	// 메서드 호출: 넓이 출력
+	console.log(rectangle.getArea()); */
+
+	class Square extends Rectangle{
+		constructor(length)
+		{
+			super(length, length);
+		}
+	}
+	
+	var square = new Square(10);
+	console.log(square.getArea());
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

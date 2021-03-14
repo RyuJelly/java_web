@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="crossEvent.js"></script>
+<script type="text/javascript">
+	function doProcess(){
+		var result = document.getElementById("result");
+		result.innerHTML = "<span>이벤트 결과</span>";
+	}
+	
+	function doProcess2(){
+		alert("이벤트결과2");
+	}
+	
+	window.onload = function(){
+		var btn = document.getElementById("btn");
+		//btn.onclick = doProcess2;
+		//btn.onclick = doProcess;
+		
+		// 두개이상의 eventListener를 사용하기 위해서는 등록후 사용
+		//btn.addEventListener('click', doProcess2, false);
+		//btn.addEventListener('click', doProcess, false);
+		
+		cross.Event.addListener(btn, 'click', doProcess2, false);
+		cross.Event.addListener(btn, 'click', doProcess, false);
+	}
+
+</script>
+</head>
+<body>
+	<input type="button" value="버튼1" onclick="doProcess()">&nbsp;&nbsp;
+	<input type="button" id="btn" value="버튼2">
+	<div id="result"></div>
+</body>
+</html>
