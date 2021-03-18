@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+	
+	$(function(){
+		var array = [
+			{name: 'Kosta', link: 'http://kosta.or.kr/'},
+			{name: 'Naver', link: 'http://naver.com/'},
+			{name: 'Daum', link: 'http://daum.net/'}		
+		];		
+		
+		// each 함수를 이용해서 <a href='url주소'>Kosta</a>
+		
+		$.each(array, function(index, item){	// item => 각각의 요소이기 때문에 this로 가능
+			document.body.innerHTML += "<a href='" + item.link + "'>" + item.name + "</a><br>";
+		});
+	});	
+
+	
+</script>
+</head>
+<body>
+	
+</body>
+</html>

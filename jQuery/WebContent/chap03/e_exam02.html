@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <script src="jquery.js" type="text/javascript"></script>
+ <script type="text/javascript">
+ 	$(function(){
+ 		var canvas = document.getElementById("canvas");
+ 		var context = canvas.getContext("2d"); 		
+ 		
+ 		$(canvas).on({
+ 			mousedown: function(event){
+ 				//위치파악
+ 				var position = $(this).offset();
+ 				var x = event.pageX - position.left;
+ 				var y = event.pageY - position.top;
+ 				
+ 				//선 그리기
+ 				context.beginPath();
+ 				context.moveTo(x, y);
+ 			},
+ 			mouseup: function(){
+ 				//위치파악
+ 				var position = $(this).offset();
+ 				var x = event.pageX - position.left;
+ 				var y = event.pageY - position.top;
+ 				
+ 				context.lineTo(x, y);
+ 				context.stroke();
+ 			}
+ 		});
+ 		
+ 	});
+ </script>
+</head>
+<body>
+	<canvas id="canvas" width="700" height="400" style="border: 3px solid black"></canvas>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

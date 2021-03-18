@@ -80,3 +80,37 @@
 3월 12, 2021 11:07:24.91 [7644:16052:0312/110724.914:ERROR:device_event_log_impl.cc(211)] [11:07:24.914] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
 3월 12, 2021 12:23:56.60 [14204:22408:0312/122356.604:ERROR:device_event_log_impl.cc(211)] [12:23:56.603] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
 3월 12, 2021 12:37:19.55 [5832:12800:0312/123719.552:ERROR:device_event_log_impl.cc(211)] [12:37:19.553] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+
+3월 16, 2021 09:29:50.39 NEW SESSION
+3월 16, 2021 09:29:50.39 [1004:856:0316/092950.390:ERROR:device_event_log_impl.cc(214)] [09:29:50.389] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 16, 2021 09:29:50.43 [1004:856:0316/092950.390:ERROR:device_event_log_impl.cc(214)] [09:29:50.389] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 16, 2021 09:29:50.44 [1004:856:0316/092950.391:ERROR:device_event_log_impl.cc(214)] [09:29:50.390] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 16, 2021 15:04:12.85 [1004:856:0316/150412.854:ERROR:device_event_log_impl.cc(214)] [15:04:12.853] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+3월 16, 2021 15:04:12.86 [1004:856:0316/150412.857:ERROR:device_event_log_impl.cc(214)] [15:04:12.857] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+
+3월 18, 2021 09:12:38.58 NEW SESSION
+3월 18, 2021 09:12:38.58 [6060:10056:0318/091238.584:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 18, 2021 09:12:38.62 [6060:10056:0318/091238.584:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 18, 2021 09:12:38.64 [6060:10056:0318/091238.584:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 18, 2021 09:12:38.66 [6060:10056:0318/091238.584:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+3월 18, 2021 09:13:03.14 [5400:8412:0318/091303.144:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 18, 2021 09:13:03.16 [5400:8412:0318/091303.144:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 18, 2021 09:13:03.19 [5400:8412:0318/091303.144:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 18, 2021 09:13:03.22 [5400:8412:0318/091303.144:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+3월 18, 2021 09:13:05.14 [13276:11212:0318/091305.140:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 18, 2021 09:13:05.17 [13276:11212:0318/091305.142:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 18, 2021 09:13:05.19 [13276:11212:0318/091305.142:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 18, 2021 09:13:05.20 [13276:11212:0318/091305.142:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+3월 18, 2021 09:14:18.31 [2144:11260:0318/091418.312:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 18, 2021 09:14:18.33 [2144:11260:0318/091418.313:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 18, 2021 09:14:18.35 [2144:11260:0318/091418.313:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 18, 2021 09:14:18.36 [2144:11260:0318/091418.313:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+
+3월 18, 2021 09:16:34.25 NEW SESSION
+3월 18, 2021 09:16:34.25 [11876:10236:0318/091634.248:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 18, 2021 09:16:34.26 [11876:10236:0318/091634.249:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 18, 2021 09:16:34.27 [11876:10236:0318/091634.249:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 18, 2021 09:16:34.29 [11876:10236:0318/091634.249:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+3월 18, 2021 09:17:44.47 [12908:3752:0318/091744.470:ERROR:device_event_log_impl.cc(214)] [09:17:44.470] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 18, 2021 09:17:44.47 [12908:3752:0318/091744.473:ERROR:device_event_log_impl.cc(214)] [09:17:44.473] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 18, 2021 09:17:44.48 [12908:3752:0318/091744.479:ERROR:device_event_log_impl.cc(214)] [09:17:44.479] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.

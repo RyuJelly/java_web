@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// div에게 클릭 이벤트를 발생 => h1: header, p: Paragragh => 경고창 출력
+		$('div').on('click', function(){
+			var header = $(this).find('h1').text();
+			var paragragh = $(this).find('p').text();
+			
+			alert(header + '\n' + paragragh);
+		});
+	});
+</script>
+</head>
+<body>
+	<div>
+		<h1>header</h1>
+		<p>Paragragh</p>
+	</div>
+</body>
+</html>

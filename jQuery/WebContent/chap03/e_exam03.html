@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		//무한스크롤 구현
+		$(window).scroll(function(){
+			//스크롤 높이와 문서의 높이가 같을때
+			//for(var i=0;i<10;i++){
+			//	$('<h1>무한스크롤</h1>').append('body');
+			//}
+/* 			console.log($(document).height());
+			if($('body').prop('scrollHeight') == $('body').height()){		// $('body').prop('scrollHeight')
+				for(var i=0;i<10;i++){										// attr = prop
+					$('<h1>무한스크롤+</h1>').appendTo('body');
+				};
+			};
+		}); */
+		
+		var scrollHeight = $(window).scrollTop() + $(window).height();
+		var documentHeight = $(document).height();
+		
+		
+		
+		for (var i = 0; i < 20; i++){
+			$('<h1>무한스크롤</h1>').appendTo('body');
+		}
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>
