@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="search.css">
+</head>
+<body id="body" class="">
+	<noscript>
+		<strong>브라우저의 Javascript 사용 설정을 하지 않으면 FLO 가 제대로 작동하지 않습니다.
+			Javascript를 사용으로 설정하신 후 다시 시도해 주세요.</strong>
+	</noscript>
+	<div id="app" class="">
+		<header id="header" role="banner">
+			<div class="header_inner">
+				<h1 class="flo_bi">
+					<a href="https://www.music-flo.com"><span class="ir">FLO</span></a>
+				</h1>
+				<nav role="navigation" class="nav_gnb">
+					<ul>
+						<li menu="[object Object]"><a href="/browse" class="">
+								둘러보기 </a></li>
+						<li menu="[object Object]"><a href="/storage" class="">
+								보관함 </a></li>
+						<li menu="[object Object]"><a href="/purchase" class="">
+								이용권 </a></li>
+					</ul>
+				</nav>
+				<fieldset class="flo_search">
+					<legend>FLO 검색</legend>
+					<input id="searchKeywordInput" type="text"
+						placeholder="검색어를 입력하세요." autocomplete="new-password"
+						spellcheck="false" autocorrect="off" autocapitalize="off"
+						class="iptxt">
+					<button type="button" class="btn_delete_input">삭제</button>
+					<div class="layer_style search_suggestion_w" style="display: none;">
+						<h3 class="hidden">검색제안</h3>
+						<ul id="searchSuggestList" class="search_suggest_list"></ul>
+						<div class="search_suggestion_each" search-word="아이유"
+							style="display: none;">
+							<h4>인기 키워드</h4>
+							<ul class="popular_keyword"></ul>
+						</div>
+						<div class="search_suggestion_each" search-word="아이유"
+							style="display: none;">
+							<h4>급상승 키워드</h4>
+							<ol class="rise_keyword">
+								<li rkeyword="[object Object]"><a
+									href="/search/all?keyword=%EC%9D%B4%EB%A0%87%EA%B2%8C%20%EC%A2%8B%EC%95%84%ED%95%B4%20%EB%B3%B8%20%EC%A0%81%EC%9D%B4%20%EC%97%86%EC%96%B4%EC%9A%94"
+									class="router-link-active"><em class="rank">1</em> 이렇게 좋아해
+										본 적이 없어요</a></li>
+								<li rkeyword="[object Object]"><a
+									href="/search/all?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0"
+									class="router-link-exact-active router-link-active"
+									aria-current="page"><em class="rank">2</em> 아이유</a></li>
+								<li rkeyword="[object Object]"><a
+									href="/search/all?keyword=%EB%A1%A4%EB%A6%B0"
+									class="router-link-active"><em class="rank">3</em> 롤린</a></li>
+								<li rkeyword="[object Object]"><a
+									href="/search/all?keyword=%EB%B8%8C%EB%A0%88%EC%9D%B4%EB%B8%8C%EA%B1%B8%EC%8A%A4"
+									class="router-link-active"><em class="rank">4</em> 브레이브걸스</a></li>
+								<li rkeyword="[object Object]"><a
+									href="/search/all?keyword=%EC%9E%84%EC%B0%BD%EC%A0%95"
+									class="router-link-active"><em class="rank">5</em> 임창정</a></li>
+								<li rkeyword="[object Object]"><a
+									href="/search/all?keyword=%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8"
+									class="router-link-active"><em class="rank">6</em> 방탄소년단</a></li>
+								<li rkeyword="[object Object]"><a
+									href="/search/all?keyword=%EB%A1%9C%EC%A0%9C"
+									class="router-link-active"><em class="rank">7</em> 로제</a></li>
+								<li rkeyword="[object Object]"><a
+									href="/search/all?keyword=%EC%A0%9C%EC%8B%9C"
+									class="router-link-active"><em class="rank">8</em> 제시</a></li>
+								<li rkeyword="[object Object]"><a
+									href="/search/all?keyword=%EC%9E%84%EC%98%81%EC%9B%85"
+									class="router-link-active"><em class="rank">9</em> 임영웅</a></li>
+								<li rkeyword="[object Object]"><a
+									href="/search/all?keyword=%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC"
+									class="router-link-active"><em class="rank">10</em> 블랙핑크</a></li>
+							</ol>
+						</div>
+					</div>
+				</fieldset>
+				<div role="navigation" class="snb_w">
+					<ul>
+						<li><a href="/intro" class="" target="_blank">FLO 소개</a></li>
+						<li><a href="/member/signin" class="">로그인</a></li>
+						<li><a href="/member/signup" class="">회원가입</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div id="wrap">
+			<section id="main" role="main" class="section_search">
+				<div class="section_inner">
+					<h2>'아이유' 검색결과</h2>
+					<div class="tab">
+						<div class="swiper-container tab-swiper-wrap">
+							<ul class="swiper-wrapper">
+								<li tab="[object Object]" tabkey="all" class="swiper-slide on"><button
+										type="button"
+										data-path="all?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0"
+										data-tabkey="all" class=" btn_tab_normal active">
+										section_content_wrap				<!---->
+										전체
+									</button></li>
+								<li tab="[object Object]" tabkey="track" class="swiper-slide"><button
+										type="button"
+										data-path="track?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0&amp;sortType=ACCURACY"
+										data-tabkey="track" class=" btn_tab_normal">
+										<!---->
+										곡
+									</button></li>
+								<li tab="[object Object]" tabkey="album" class="swiper-slide"><button
+										type="button"
+										data-path="album?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0&amp;sortType=ACCURACY"
+										data-tabkey="album" class=" btn_tab_normal">
+										<!---->
+										앨범
+									</button></li>
+								<li tab="[object Object]" tabkey="artist" class="swiper-slide"><button
+										type="button"
+										data-path="artist?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0&amp;sortType=ACCURACY"
+										data-tabkey="artist" class=" btn_tab_normal">
+										<!---->
+										아티스트
+									</button></li>
+								<li tab="[object Object]" tabkey="theme" class="swiper-slide"><button
+										type="button"
+										data-path="theme?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0&amp;sortType=ACCURACY"
+										data-tabkey="theme" class=" btn_tab_normal">
+										<!---->
+										테마리스트
+									</button></li>
+								<li tab="[object Object]" tabkey="lyrics" class="swiper-slide"><button
+										type="button"
+										data-path="lyrics?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0&amp;sortType=ACCURACY"
+										data-tabkey="lyrics" class=" btn_tab_normal">
+										<!---->
+										가사
+									</button></li>
+							</ul>
+						</div>
+						<!---->
+					</div>
+					<div>
+						<div class="search_section_top_badge">
+							<div class="bagde_area type_artist  ">
+								<!---->
+								<!---->
+								<div class="album_thumbnail type_artist sm_size">
+									<a
+										href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+										class="link_thumbnail" title="아이유 (IU) 자세히보기"
+										style="background-image: url('1.jpg')"></a>
+									<button title="아이유 (IU) 듣기" class="btn_thumbnail_play">아이유
+										(IU) 듣기</button>
+								</div>
+								<div class="badge_track_info">
+									<div class="info_area">
+										<!---->
+										<!---->
+										<!---->
+										<!---->
+										<p class="artist">
+											<span artist="[object Object]" index="0" class="artist_link">
+												<!----> <a
+												href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+												class="last"
+												data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;/thumb_artist&quot;, &quot;pageId&quot;: &quot;/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL&quot;, &quot;artistId&quot;: &quot;80049126&quot;, &quot;artistName&quot; : &quot;아이유 (IU)&quot;, &quot;noBodyPayload&quot;: true}">
+													<!--fragment#120b731a382#head-->아이유 (IU)<!--fragment#120b731a382#tail-->
+											</a>
+											</span>
+										</p>
+										<!---->
+									</div>
+									<!---->
+									<dl>
+										<dt class="hidden">아티스트 정보</dt>
+										<dd>솔로</dd>
+										<!---->
+										<!---->
+									</dl>
+									<!---->
+									<!---->
+									<div class="util_area">
+										<!---->
+										<!---->
+										<!---->
+										<!---->
+										<button type="button"
+											data-rake="{&quot;actionId&quot;: &quot;play_popular&quot;, &quot;categoryId&quot;: &quot;/thumb_artist&quot;, &quot;pageId&quot;: &quot;/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL&quot;, &quot;artistId&quot; : &quot;80049126&quot;, &quot;noBodyPayload&quot;: true}"
+											class="btn_popular_listen">인기곡 듣기</button>
+										<!---->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<div class="section_content_wrap">
+							<div class="section_content_head">
+								<h3>
+									<a href="/search/track?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0"
+										class="section_title" title="앨범 더보기">곡</a>
+								</h3>
+							</div>
+							<table class="track_list_table">
+								<caption>아이유 곡 검색 결과 목록</caption>
+								<colgroup>
+									<col width="42" data-cell="체크박스">
+									<!---->
+									<!---->
+									<!---->
+									<col width="*" data-cell="곡/앨범">
+									<col width="250" data-cell="아티스트">
+									<!---->
+									<!---->
+									<col width="65" data-cell="듣기">
+									<col width="65" data-cell="재생목록">
+									<col width="65" data-cell="내리스트">
+									<col width="65" data-cell="더보기">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col"><input id="searchTrackAllSelect"
+											type="checkbox" name="전체 곡 선택하기" class="inp_check_square">
+											<label for="searchTrackAllSelect"><span
+												class="hidden">전체 곡 선택하기</span></label></th>
+										<!---->
+										<!---->
+										<!---->
+										<th scope="col" class="info">곡/앨범</th>
+										<th scope="col" class="artist">아티스트</th>
+										<!---->
+										<!---->
+										<th scope="col">듣기</th>
+										<th scope="col">재생목록</th>
+										<th scope="col">내 리스트</th>
+										<th scope="col">더보기</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="">
+										<td class="select"><input id="searchTrackSelect1"
+											type="checkbox" name="1번째 곡 선택하기"
+											data-rake="{&quot;actionId&quot;: &quot;select&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;443615873&quot;, &quot;trackName&quot;: &quot;Celebrity&quot;, &quot;state&quot;: &quot;ON&quot;}"
+											class="inp_check_square"> <label
+											for="searchTrackSelect1"><span class="hidden">1번째
+													곡 선택하기</span></label></td>
+										<!---->
+										<!---->
+										<!---->
+										<td class="info"><label for="searchTrackSelect1"><span
+												class="hidden">1번째 곡 선택하기</span></label>
+											<div class="info_wrap">
+												<div class="thumb">
+													<a href="/detail/album/edloooanl/albumtrack" class=""
+														data-rake="{&quot;actionId&quot;: &quot;more_album&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;albumId&quot;:&quot;405777125&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"><img
+														alt="'Celebrity' 앨범 이미지"
+														data-src="https://cdn.music-flo.com/image/v2/album/125/777/05/04/405777125_6010e16c_o.jpg?1611719022486/dims/resize/140x140/quality/90"
+														src="https://cdn.music-flo.com/image/v2/album/125/777/05/04/405777125_6010e16c_o.jpg?1611719022486/dims/resize/140x140/quality/90"
+														lazy="loaded"> <!----></a>
+												</div>
+												<div class="txt_area">
+													<button type="button">
+														<!---->
+														<p class="tit">
+															<!---->
+															<!---->
+															<strong>
+																<!--fragment#3b28205ed6#head-->Celebrity<!--fragment#3b28205ed6#tail-->
+															</strong>
+															<!---->
+														</p>
+													</button>
+													<a href="/detail/album/edloooanl/albumtrack" class=""><p
+															class="album">
+															<!---->
+															<!--fragment#17e0b9105d#head-->
+															Celebrity
+															<!--fragment#17e0b9105d#tail-->
+															<!---->
+														</p></a>
+												</div>
+											</div></td>
+										<td class="artist"><label for="searchTrackSelect1"><span
+												class="hidden">1번째 곡 선택하기</span></label>
+											<p>
+												<span class="artist_link_w"><span><span
+														artist="[object Object]" index="0" class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;more_artist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;443615873&quot;, &quot;artistId&quot;: &quot;아이유 (IU)&quot;}">
+																<!--fragment#1473a442731#head-->
+																<em fragment="1473a442731" class="search_keyword">아이유</em>
+																(IU)<!--fragment#1473a442731#tail-->
+														</a>
+													</span></span></span> <span class="tooltip">
+													<!--fragment#f399c6c2c#head-->
+													<em fragment="f399c6c2c" class="search_keyword">아이유</em>
+													(IU)<!--fragment#f399c6c2c#tail-->
+												</span>
+											</p></td>
+										<!---->
+										<!---->
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;play&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;443615873&quot;, &quot;trackName&quot;: &quot;Celebrity&quot;}"
+												class="btn_listen">선택한 음악 듣기</button></td>
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;selected_playlist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;443615873&quot;, &quot;trackName&quot;: &quot;Celebrity&quot;}"
+												class="btn_add_play">재생 목록 추가</button></td>
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;selected_mylist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;443615873&quot;, &quot;trackName&quot;: &quot;Celebrity&quot;}"
+												class="btn_add_my">내 리스트 추가</button></td>
+										<td><div class="more_wrap">
+												<button type="button" data-except="openTrackMore"
+													data-rake="{&quot;actionId&quot;: &quot;more&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;:&quot;true&quot;}"
+													class="btn_more">더보기</button>
+												<!---->
+											</div></td>
+									</tr>
+									<tr class="">
+										<td class="select"><input id="searchTrackSelect2"
+											type="checkbox" name="2번째 곡 선택하기"
+											data-rake="{&quot;actionId&quot;: &quot;select&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433090157&quot;, &quot;trackName&quot;: &quot;Love poem&quot;, &quot;state&quot;: &quot;ON&quot;}"
+											class="inp_check_square"> <label
+											for="searchTrackSelect2"><span class="hidden">2번째
+													곡 선택하기</span></label></td>
+										<!---->
+										<!---->
+										<!---->
+										<td class="info"><label for="searchTrackSelect2"><span
+												class="hidden">2번째 곡 선택하기</span></label>
+											<div class="info_wrap">
+												<div class="thumb">
+													<a href="/detail/album/edenddyll/albumtrack" class=""
+														data-rake="{&quot;actionId&quot;: &quot;more_album&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;albumId&quot;:&quot;404200955&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"><img
+														alt="'Love poem' 앨범 이미지"
+														data-src="https://cdn.music-flo.com/image/album/955/200/04/04/404200955_5dd24da4.jpg?1574063525861/dims/resize/140x140/quality/90"
+														src="https://cdn.music-flo.com/image/album/955/200/04/04/404200955_5dd24da4.jpg?1574063525861/dims/resize/140x140/quality/90"
+														lazy="loaded"> <!----></a>
+												</div>
+												<div class="txt_area">
+													<button type="button">
+														<!---->
+														<p class="tit">
+															<!---->
+															<!---->
+															<strong>
+																<!--fragment#e0ca1f3bcd#head-->Love poem<!--fragment#e0ca1f3bcd#tail-->
+															</strong>
+															<!---->
+														</p>
+													</button>
+													<a href="/detail/album/edenddyll/albumtrack" class=""><p
+															class="album">
+															<!---->
+															<!--fragment#2ed8955ca3#head-->
+															Love poem
+															<!--fragment#2ed8955ca3#tail-->
+															<!---->
+														</p></a>
+												</div>
+											</div></td>
+										<td class="artist"><label for="searchTrackSelect2"><span
+												class="hidden">2번째 곡 선택하기</span></label>
+											<p>
+												<span class="artist_link_w"><span><span
+														artist="[object Object]" index="0" class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;more_artist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433090157&quot;, &quot;artistId&quot;: &quot;아이유 (IU)&quot;}">
+																<!--fragment#15862201eaf#head-->
+																<em fragment="15862201eaf" class="search_keyword">아이유</em>
+																(IU)<!--fragment#15862201eaf#tail-->
+														</a>
+													</span></span></span> <span class="tooltip">
+													<!--fragment#54115f5d5c#head-->
+													<em fragment="54115f5d5c" class="search_keyword">아이유</em>
+													(IU)<!--fragment#54115f5d5c#tail-->
+												</span>
+											</p></td>
+										<!---->
+										<!---->
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;play&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433090157&quot;, &quot;trackName&quot;: &quot;Love poem&quot;}"
+												class="btn_listen">선택한 음악 듣기</button></td>
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;selected_playlist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433090157&quot;, &quot;trackName&quot;: &quot;Love poem&quot;}"
+												class="btn_add_play">재생 목록 추가</button></td>
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;selected_mylist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433090157&quot;, &quot;trackName&quot;: &quot;Love poem&quot;}"
+												class="btn_add_my">내 리스트 추가</button></td>
+										<td><div class="more_wrap">
+												<button type="button" data-except="openTrackMore"
+													data-rake="{&quot;actionId&quot;: &quot;more&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;:&quot;true&quot;}"
+													class="btn_more">더보기</button>
+												<!---->
+											</div></td>
+									</tr>
+									<tr class="">
+										<td class="select"><input id="searchTrackSelect3"
+											type="checkbox" name="3번째 곡 선택하기"
+											data-rake="{&quot;actionId&quot;: &quot;select&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433468306&quot;, &quot;trackName&quot;: &quot;Blueming&quot;, &quot;state&quot;: &quot;ON&quot;}"
+											class="inp_check_square"> <label
+											for="searchTrackSelect3"><span class="hidden">3번째
+													곡 선택하기</span></label></td>
+										<!---->
+										<!---->
+										<!---->
+										<td class="info"><label for="searchTrackSelect3"><span
+												class="hidden">3번째 곡 선택하기</span></label>
+											<div class="info_wrap">
+												<div class="thumb">
+													<a href="/detail/album/edenddyll/albumtrack" class=""
+														data-rake="{&quot;actionId&quot;: &quot;more_album&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;albumId&quot;:&quot;404200955&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"><img
+														alt="'Love poem' 앨범 이미지"
+														data-src="https://cdn.music-flo.com/image/album/955/200/04/04/404200955_5dd24da4.jpg?1574063525861/dims/resize/140x140/quality/90"
+														src="https://cdn.music-flo.com/image/album/955/200/04/04/404200955_5dd24da4.jpg?1574063525861/dims/resize/140x140/quality/90"
+														lazy="loaded"> <!----></a>
+												</div>
+												<div class="txt_area">
+													<button type="button">
+														<!---->
+														<p class="tit">
+															<!---->
+															<!---->
+															<strong>
+																<!--fragment#18ceab619#head-->Blueming<!--fragment#18ceab619#tail-->
+															</strong>
+															<!---->
+														</p>
+													</button>
+													<a href="/detail/album/edenddyll/albumtrack" class=""><p
+															class="album">
+															<!---->
+															<!--fragment#11d56fbdfb#head-->
+															Love poem
+															<!--fragment#11d56fbdfb#tail-->
+															<!---->
+														</p></a>
+												</div>
+											</div></td>
+										<td class="artist"><label for="searchTrackSelect3"><span
+												class="hidden">3번째 곡 선택하기</span></label>
+											<p>
+												<span class="artist_link_w non_active"><span><span
+														artist="[object Object]" index="0" class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;more_artist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433468306&quot;, &quot;artistId&quot;: &quot;아이유 (IU)&quot;}">
+																<!--fragment#107b13caf9e#head-->
+																<em fragment="107b13caf9e" class="search_keyword">아이유</em>
+																(IU)<!--fragment#107b13caf9e#tail-->
+														</a>
+													</span></span></span> <span class="tooltip">
+													<!--fragment#119c9e5af2a#head-->
+													<em fragment="119c9e5af2a" class="search_keyword">아이유</em>
+													(IU)<!--fragment#119c9e5af2a#tail-->
+												</span>
+											</p></td>
+										<!---->
+										<!---->
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;play&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433468306&quot;, &quot;trackName&quot;: &quot;Blueming&quot;}"
+												class="btn_listen">선택한 음악 듣기</button></td>
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;selected_playlist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433468306&quot;, &quot;trackName&quot;: &quot;Blueming&quot;}"
+												class="btn_add_play">재생 목록 추가</button></td>
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;selected_mylist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433468306&quot;, &quot;trackName&quot;: &quot;Blueming&quot;}"
+												class="btn_add_my">내 리스트 추가</button></td>
+										<td><div class="more_wrap">
+												<button type="button" data-except="openTrackMore"
+													data-rake="{&quot;actionId&quot;: &quot;more&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;:&quot;true&quot;}"
+													class="btn_more">더보기</button>
+												<!---->
+											</div></td>
+									</tr>
+									<tr class="">
+										<td class="select"><input id="searchTrackSelect4"
+											type="checkbox" name="4번째 곡 선택하기"
+											data-rake="{&quot;actionId&quot;: &quot;select&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;30598121&quot;, &quot;trackName&quot;: &quot;밤편지&quot;, &quot;state&quot;: &quot;ON&quot;}"
+											class="inp_check_square"> <label
+											for="searchTrackSelect4"><span class="hidden">4번째
+													곡 선택하기</span></label></td>
+										<!---->
+										<!---->
+										<!---->
+										<td class="info"><label for="searchTrackSelect4"><span
+												class="hidden">4번째 곡 선택하기</span></label>
+											<div class="info_wrap">
+												<div class="thumb">
+													<a href="/detail/album/nddhydyn/albumtrack" class=""
+														data-rake="{&quot;actionId&quot;: &quot;more_album&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;albumId&quot;:&quot;20089092&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"><img
+														alt="'밤편지' 앨범 이미지"
+														data-src="https://cdn.music-flo.com/image/album/931/304/02/04/402304931.jpg/dims/resize/140x140/quality/90"
+														src="https://cdn.music-flo.com/image/album/931/304/02/04/402304931.jpg/dims/resize/140x140/quality/90"
+														lazy="loaded"> <!----></a>
+												</div>
+												<div class="txt_area">
+													<button type="button">
+														<!---->
+														<p class="tit">
+															<!---->
+															<!---->
+															<strong>
+																<!--fragment#54c37e7b41#head-->밤편지<!--fragment#54c37e7b41#tail-->
+															</strong>
+															<!---->
+														</p>
+													</button>
+													<a href="/detail/album/nddhydyn/albumtrack" class=""><p
+															class="album">
+															<!---->
+															<!--fragment#7f86ff8515#head-->
+															밤편지
+															<!--fragment#7f86ff8515#tail-->
+															<!---->
+														</p></a>
+												</div>
+											</div></td>
+										<td class="artist"><label for="searchTrackSelect4"><span
+												class="hidden">4번째 곡 선택하기</span></label>
+											<p>
+												<span class="artist_link_w"><span><span
+														artist="[object Object]" index="0" class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;more_artist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;30598121&quot;, &quot;artistId&quot;: &quot;아이유 (IU)&quot;}">
+																<!--fragment#483b6ae384#head-->
+																<em fragment="483b6ae384" class="search_keyword">아이유</em>
+																(IU)<!--fragment#483b6ae384#tail-->
+														</a>
+													</span></span></span> <span class="tooltip">
+													<!--fragment#16772116f20#head-->
+													<em fragment="16772116f20" class="search_keyword">아이유</em>
+													(IU)<!--fragment#16772116f20#tail-->
+												</span>
+											</p></td>
+										<!---->
+										<!---->
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;play&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;30598121&quot;, &quot;trackName&quot;: &quot;밤편지&quot;}"
+												class="btn_listen">선택한 음악 듣기</button></td>
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;selected_playlist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;30598121&quot;, &quot;trackName&quot;: &quot;밤편지&quot;}"
+												class="btn_add_play">재생 목록 추가</button></td>
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;selected_mylist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;30598121&quot;, &quot;trackName&quot;: &quot;밤편지&quot;}"
+												class="btn_add_my">내 리스트 추가</button></td>
+										<td><div class="more_wrap">
+												<button type="button" data-except="openTrackMore"
+													data-rake="{&quot;actionId&quot;: &quot;more&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;:&quot;true&quot;}"
+													class="btn_more">더보기</button>
+												<!---->
+											</div></td>
+									</tr>
+									<tr class="">
+										<td class="select"><input id="searchTrackSelect5"
+											type="checkbox" name="5번째 곡 선택하기"
+											data-rake="{&quot;actionId&quot;: &quot;select&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;2343004&quot;, &quot;trackName&quot;: &quot;내 손을 잡아&quot;, &quot;state&quot;: &quot;ON&quot;}"
+											class="inp_check_square"> <label
+											for="searchTrackSelect5"><span class="hidden">5번째
+													곡 선택하기</span></label></td>
+										<!---->
+										<!---->
+										<!---->
+										<td class="info"><label for="searchTrackSelect5"><span
+												class="hidden">5번째 곡 선택하기</span></label>
+											<div class="info_wrap">
+												<div class="thumb">
+													<a href="/detail/album/nhzoae/albumtrack" class=""
+														data-rake="{&quot;actionId&quot;: &quot;more_album&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;albumId&quot;:&quot;286714&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"><img
+														alt="'최고의 사랑 OST - Part.4' 앨범 이미지"
+														data-src="https://cdn.music-flo.com/image/album/724/061/00/04/400061724_5c9f7796.jpg?1553954711836/dims/resize/140x140/quality/90"
+														src="https://cdn.music-flo.com/image/album/724/061/00/04/400061724_5c9f7796.jpg?1553954711836/dims/resize/140x140/quality/90"
+														lazy="loaded"> <!----></a>
+												</div>
+												<div class="txt_area">
+													<button type="button">
+														<!---->
+														<p class="tit">
+															<!---->
+															<!---->
+															<strong>
+																<!--fragment#e58e6137ba#head-->내 손을 잡아<!--fragment#e58e6137ba#tail-->
+															</strong>
+															<!---->
+														</p>
+													</button>
+													<a href="/detail/album/nhzoae/albumtrack" class=""><p
+															class="album">
+															<!---->
+															<!--fragment#1473dc809aa#head-->
+															최고의 사랑 OST - Part.4
+															<!--fragment#1473dc809aa#tail-->
+															<!---->
+														</p></a>
+												</div>
+											</div></td>
+										<td class="artist"><label for="searchTrackSelect5"><span
+												class="hidden">5번째 곡 선택하기</span></label>
+											<p>
+												<span class="artist_link_w"><span><span
+														artist="[object Object]" index="0" class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;more_artist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;2343004&quot;, &quot;artistId&quot;: &quot;아이유 (IU)&quot;}">
+																<!--fragment#bacc538e98#head-->
+																<em fragment="bacc538e98" class="search_keyword">아이유</em>
+																(IU)<!--fragment#bacc538e98#tail-->
+														</a>
+													</span></span></span> <span class="tooltip">
+													<!--fragment#bf5e2078c9#head-->
+													<em fragment="bf5e2078c9" class="search_keyword">아이유</em>
+													(IU)<!--fragment#bf5e2078c9#tail-->
+												</span>
+											</p></td>
+										<!---->
+										<!---->
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;play&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;2343004&quot;, &quot;trackName&quot;: &quot;내 손을 잡아&quot;}"
+												class="btn_listen">선택한 음악 듣기</button></td>
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;selected_playlist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;2343004&quot;, &quot;trackName&quot;: &quot;내 손을 잡아&quot;}"
+												class="btn_add_play">재생 목록 추가</button></td>
+										<td><button type="button"
+												data-rake="{&quot;actionId&quot;: &quot;selected_mylist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;2343004&quot;, &quot;trackName&quot;: &quot;내 손을 잡아&quot;}"
+												class="btn_add_my">내 리스트 추가</button></td>
+										<td><div class="more_wrap">
+												<button type="button" data-except="openTrackMore"
+													data-rake="{&quot;actionId&quot;: &quot;more&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;:&quot;true&quot;}"
+													class="btn_more">더보기</button>
+												<!---->
+											</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<section class="section_content_wrap">
+							<div class="section_content_head">
+								<h3>
+									<a href="/search/album?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0"
+										class="section_title" title="앨범 더보기">앨범</a>
+								</h3>
+								<!---->
+								<!---->
+							</div>
+							<div class="section_content">
+								<ul class="thumbnail_list  badge_thumbnail_list ">
+									<li class=""><div class="bagde_area type_default  ">
+											<!---->
+											<!---->
+											<div class="album_thumbnail">
+												<a href="/detail/album/edenddyll/albumtrack"
+													class="link_thumbnail" title="Love poem 자세히보기"><img
+													src="https://cdn.music-flo.com/image/album/955/200/04/04/404200955_5dd24da4.jpg?1574063525861/dims/resize/500x500/quality/90"
+													width="175" height="175" alt="Love poem"></a>
+												<button title="Love poem 듣기" class="btn_thumbnail_play">Love
+													poem 듣기</button>
+											</div>
+											<div class="badge_track_info">
+												<div class="info_area">
+													<!---->
+													<!---->
+													<p class="title">
+														<!---->
+														<a href="/detail/album/edenddyll/albumtrack" class=""
+															data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;&quot;, &quot;pageId&quot;: &quot;/detail/album/edenddyll/albumtrack&quot;, &quot;albumId&quot;: &quot;404200955&quot;, &quot;albumName&quot;: &quot;Love poem&quot;, &quot;noBodyPayload&quot;: true}">
+															<!--fragment#12f3b30e704#head-->Love poem<!--fragment#12f3b30e704#tail-->
+														</a>
+													</p>
+													<!---->
+													<p class="artist">
+														<span artist="[object Object]" index="0"
+															class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;/thumb_artist&quot;, &quot;pageId&quot;: &quot;/detail/album/edenddyll/albumtrack&quot;, &quot;artistId&quot;: &quot;404200955&quot;, &quot;artistName&quot; : &quot;undefined&quot;, &quot;noBodyPayload&quot;: true}">
+																<!--fragment#14fae785c13#head-->아이유 (IU)<!--fragment#14fae785c13#tail-->
+														</a>
+														</span>
+													</p>
+													<!---->
+												</div>
+												<div class="explain_area">
+													<div class="txt">
+														<!---->
+													</div>
+													<!---->
+												</div>
+												<!---->
+												<!---->
+												<dl>
+													<dt class="hidden">앨범 정보</dt>
+													<dd>미니</dd>
+													<dd>국내 팝/어쿠스틱</dd>
+													<dd class="date">
+														2019.11.18<span class="hidden">발매</span>
+													</dd>
+												</dl>
+												<div class="util_area">
+													<button type="button"
+														data-rake="{&quot;actionId&quot;: &quot;select_playlist&quot;, &quot;categoryId&quot;: &quot;/thumb_album&quot;, &quot;pageId&quot;: &quot;/detail/album/edenddyll/albumtrack&quot;, &quot;albumId&quot; : &quot;404200955&quot;, &quot;noBodyPayload&quot;: true}"
+														title="재생 목록 담기" class="btn_add_list">재생 목록 담기</button>
+													<button type="button"
+														data-rake="{&quot;actionId&quot;: &quot;select_mylist&quot;, &quot;categoryId&quot;: &quot;/thumb_album&quot;, &quot;pageId&quot;: &quot;/detail/album/edenddyll/albumtrack&quot;, &quot;albumId&quot; : &quot;404200955&quot;, &quot;noBodyPayload&quot;: true}"
+														title="내 리스트 담기" class="btn_add_playlist">내 리스트
+														담기</button>
+													<!---->
+													<!---->
+													<!---->
+													<!---->
+												</div>
+											</div>
+										</div></li>
+									<li class=""><div class="bagde_area type_default  ">
+											<!---->
+											<!---->
+											<div class="album_thumbnail">
+												<a href="/detail/album/nddyeaed/albumtrack"
+													class="link_thumbnail" title="Palette 자세히보기"><img
+													src="https://cdn.music-flo.com/image/album/894/309/02/04/402309894_5c9f7587.jpg?1553954184503/dims/resize/500x500/quality/90"
+													width="175" height="175" alt="Palette"></a>
+												<button title="Palette 듣기" class="btn_thumbnail_play">Palette
+													듣기</button>
+											</div>
+											<div class="badge_track_info">
+												<div class="info_area">
+													<!---->
+													<!---->
+													<p class="title">
+														<!---->
+														<a href="/detail/album/nddyeaed/albumtrack" class=""
+															data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;&quot;, &quot;pageId&quot;: &quot;/detail/album/nddyeaed/albumtrack&quot;, &quot;albumId&quot;: &quot;20094140&quot;, &quot;albumName&quot;: &quot;Palette&quot;, &quot;noBodyPayload&quot;: true}">
+															<!--fragment#376b308769#head-->Palette<!--fragment#376b308769#tail-->
+														</a>
+													</p>
+													<!---->
+													<p class="artist">
+														<span artist="[object Object]" index="0"
+															class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;/thumb_artist&quot;, &quot;pageId&quot;: &quot;/detail/album/nddyeaed/albumtrack&quot;, &quot;artistId&quot;: &quot;20094140&quot;, &quot;artistName&quot; : &quot;undefined&quot;, &quot;noBodyPayload&quot;: true}">
+																<!--fragment#ef7dfdbf42#head-->아이유 (IU)<!--fragment#ef7dfdbf42#tail-->
+														</a>
+														</span>
+													</p>
+													<!---->
+												</div>
+												<div class="explain_area">
+													<div class="txt">
+														<!---->
+													</div>
+													<!---->
+												</div>
+												<!---->
+												<!---->
+												<dl>
+													<dt class="hidden">앨범 정보</dt>
+													<dd>정규</dd>
+													<dd>국내 팝/어쿠스틱,국내 발라드,국내 알앤비</dd>
+													<dd class="date">
+														2017.04.21<span class="hidden">발매</span>
+													</dd>
+												</dl>
+												<div class="util_area">
+													<button type="button"
+														data-rake="{&quot;actionId&quot;: &quot;select_playlist&quot;, &quot;categoryId&quot;: &quot;/thumb_album&quot;, &quot;pageId&quot;: &quot;/detail/album/nddyeaed/albumtrack&quot;, &quot;albumId&quot; : &quot;20094140&quot;, &quot;noBodyPayload&quot;: true}"
+														title="재생 목록 담기" class="btn_add_list">재생 목록 담기</button>
+													<button type="button"
+														data-rake="{&quot;actionId&quot;: &quot;select_mylist&quot;, &quot;categoryId&quot;: &quot;/thumb_album&quot;, &quot;pageId&quot;: &quot;/detail/album/nddyeaed/albumtrack&quot;, &quot;albumId&quot; : &quot;20094140&quot;, &quot;noBodyPayload&quot;: true}"
+														title="내 리스트 담기" class="btn_add_playlist">내 리스트
+														담기</button>
+													<!---->
+													<!---->
+													<!---->
+													<!---->
+												</div>
+											</div>
+										</div></li>
+									<li class=""><div class="bagde_area type_default  ">
+											<!---->
+											<!---->
+											<div class="album_thumbnail">
+												<a href="/detail/album/ndaayzez/albumtrack"
+													class="link_thumbnail" title="꽃갈피 둘 자세히보기"><img
+													src="https://cdn.music-flo.com/image/album/906/334/02/04/402334906_5c9f75da.jpg?1553954267247/dims/resize/500x500/quality/90"
+													width="175" height="175" alt="꽃갈피 둘"></a>
+												<button title="꽃갈피 둘 듣기" class="btn_thumbnail_play">꽃갈피
+													둘 듣기</button>
+											</div>
+											<div class="badge_track_info">
+												<div class="info_area">
+													<!---->
+													<!---->
+													<p class="title">
+														<!---->
+														<a href="/detail/album/ndaayzez/albumtrack" class=""
+															data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;&quot;, &quot;pageId&quot;: &quot;/detail/album/ndaayzez/albumtrack&quot;, &quot;albumId&quot;: &quot;20119646&quot;, &quot;albumName&quot;: &quot;꽃갈피 둘&quot;, &quot;noBodyPayload&quot;: true}">
+															<!--fragment#1758fd36f6d#head-->꽃갈피 둘<!--fragment#1758fd36f6d#tail-->
+														</a>
+													</p>
+													<!---->
+													<p class="artist">
+														<span artist="[object Object]" index="0"
+															class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;/thumb_artist&quot;, &quot;pageId&quot;: &quot;/detail/album/ndaayzez/albumtrack&quot;, &quot;artistId&quot;: &quot;20119646&quot;, &quot;artistName&quot; : &quot;undefined&quot;, &quot;noBodyPayload&quot;: true}">
+																<!--fragment#3c5a227380#head-->아이유 (IU)<!--fragment#3c5a227380#tail-->
+														</a>
+														</span>
+													</p>
+													<!---->
+												</div>
+												<div class="explain_area">
+													<div class="txt">
+														<!---->
+													</div>
+													<!---->
+												</div>
+												<!---->
+												<!---->
+												<dl>
+													<dt class="hidden">앨범 정보</dt>
+													<dd>스페셜</dd>
+													<dd>국내 팝/어쿠스틱,국내 발라드</dd>
+													<dd class="date">
+														2017.09.22<span class="hidden">발매</span>
+													</dd>
+												</dl>
+												<div class="util_area">
+													<button type="button"
+														data-rake="{&quot;actionId&quot;: &quot;select_playlist&quot;, &quot;categoryId&quot;: &quot;/thumb_album&quot;, &quot;pageId&quot;: &quot;/detail/album/ndaayzez/albumtrack&quot;, &quot;albumId&quot; : &quot;20119646&quot;, &quot;noBodyPayload&quot;: true}"
+														title="재생 목록 담기" class="btn_add_list">재생 목록 담기</button>
+													<button type="button"
+														data-rake="{&quot;actionId&quot;: &quot;select_mylist&quot;, &quot;categoryId&quot;: &quot;/thumb_album&quot;, &quot;pageId&quot;: &quot;/detail/album/ndaayzez/albumtrack&quot;, &quot;albumId&quot; : &quot;20119646&quot;, &quot;noBodyPayload&quot;: true}"
+														title="내 리스트 담기" class="btn_add_playlist">내 리스트
+														담기</button>
+													<!---->
+													<!---->
+													<!---->
+													<!---->
+												</div>
+											</div>
+										</div></li>
+									<li class=""><div class="bagde_area type_default  ">
+											<!---->
+											<!---->
+											<div class="album_thumbnail">
+												<a href="/detail/album/nddhydyn/albumtrack"
+													class="link_thumbnail" title="밤편지 자세히보기"><img
+													src="https://cdn.music-flo.com/image/album/931/304/02/04/402304931.jpg/dims/resize/500x500/quality/90"
+													width="175" height="175" alt="밤편지"></a>
+												<button title="밤편지 듣기" class="btn_thumbnail_play">밤편지
+													듣기</button>
+											</div>
+											<div class="badge_track_info">
+												<div class="info_area">
+													<!---->
+													<!---->
+													<p class="title">
+														<!---->
+														<a href="/detail/album/nddhydyn/albumtrack" class=""
+															data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;&quot;, &quot;pageId&quot;: &quot;/detail/album/nddhydyn/albumtrack&quot;, &quot;albumId&quot;: &quot;20089092&quot;, &quot;albumName&quot;: &quot;밤편지&quot;, &quot;noBodyPayload&quot;: true}">
+															<!--fragment#667452e288#head-->밤편지<!--fragment#667452e288#tail-->
+														</a>
+													</p>
+													<!---->
+													<p class="artist">
+														<span artist="[object Object]" index="0"
+															class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;/thumb_artist&quot;, &quot;pageId&quot;: &quot;/detail/album/nddhydyn/albumtrack&quot;, &quot;artistId&quot;: &quot;20089092&quot;, &quot;artistName&quot; : &quot;undefined&quot;, &quot;noBodyPayload&quot;: true}">
+																<!--fragment#14e7dd996b0#head-->아이유 (IU)<!--fragment#14e7dd996b0#tail-->
+														</a>
+														</span>
+													</p>
+													<!---->
+												</div>
+												<div class="explain_area">
+													<div class="txt">
+														<!---->
+													</div>
+													<!---->
+												</div>
+												<!---->
+												<!---->
+												<dl>
+													<dt class="hidden">앨범 정보</dt>
+													<dd>디지털싱글</dd>
+													<dd>국내 팝/어쿠스틱,국내 발라드</dd>
+													<dd class="date">
+														2017.03.24<span class="hidden">발매</span>
+													</dd>
+												</dl>
+												<div class="util_area">
+													<button type="button"
+														data-rake="{&quot;actionId&quot;: &quot;select_playlist&quot;, &quot;categoryId&quot;: &quot;/thumb_album&quot;, &quot;pageId&quot;: &quot;/detail/album/nddhydyn/albumtrack&quot;, &quot;albumId&quot; : &quot;20089092&quot;, &quot;noBodyPayload&quot;: true}"
+														title="재생 목록 담기" class="btn_add_list">재생 목록 담기</button>
+													<button type="button"
+														data-rake="{&quot;actionId&quot;: &quot;select_mylist&quot;, &quot;categoryId&quot;: &quot;/thumb_album&quot;, &quot;pageId&quot;: &quot;/detail/album/nddhydyn/albumtrack&quot;, &quot;albumId&quot; : &quot;20089092&quot;, &quot;noBodyPayload&quot;: true}"
+														title="내 리스트 담기" class="btn_add_playlist">내 리스트
+														담기</button>
+													<!---->
+													<!---->
+													<!---->
+													<!---->
+												</div>
+											</div>
+										</div></li>
+									<li class=""><div class="bagde_area type_default  ">
+											<!---->
+											<!---->
+											<div class="album_thumbnail">
+												<a href="/detail/album/ndayyalh/albumtrack"
+													class="link_thumbnail" title="삐삐 자세히보기"><img
+													src="https://cdn.music-flo.com/image/album/052/413/02/04/402413052_5c9f76ae.jpg?1553954479581/dims/resize/500x500/quality/90"
+													width="175" height="175" alt="삐삐"></a>
+												<button title="삐삐 듣기" class="btn_thumbnail_play">삐삐
+													듣기</button>
+											</div>
+											<div class="badge_track_info">
+												<div class="info_area">
+													<!---->
+													<!---->
+													<p class="title">
+														<!---->
+														<a href="/detail/album/ndayyalh/albumtrack" class=""
+															data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;&quot;, &quot;pageId&quot;: &quot;/detail/album/ndayyalh/albumtrack&quot;, &quot;albumId&quot;: &quot;20199158&quot;, &quot;albumName&quot;: &quot;삐삐&quot;, &quot;noBodyPayload&quot;: true}">
+															<!--fragment#38cb36178#head-->삐삐<!--fragment#38cb36178#tail-->
+														</a>
+													</p>
+													<!---->
+													<p class="artist">
+														<span artist="[object Object]" index="0"
+															class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;/thumb_artist&quot;, &quot;pageId&quot;: &quot;/detail/album/ndayyalh/albumtrack&quot;, &quot;artistId&quot;: &quot;20199158&quot;, &quot;artistName&quot; : &quot;undefined&quot;, &quot;noBodyPayload&quot;: true}">
+																<!--fragment#53869ef000#head-->아이유 (IU)<!--fragment#53869ef000#tail-->
+														</a>
+														</span>
+													</p>
+													<!---->
+												</div>
+												<div class="explain_area">
+													<div class="txt">
+														<!---->
+													</div>
+													<!---->
+												</div>
+												<!---->
+												<!---->
+												<dl>
+													<dt class="hidden">앨범 정보</dt>
+													<dd>싱글</dd>
+													<dd>국내 알앤비</dd>
+													<dd class="date">
+														2018.10.10<span class="hidden">발매</span>
+													</dd>
+												</dl>
+												<div class="util_area">
+													<button type="button"
+														data-rake="{&quot;actionId&quot;: &quot;select_playlist&quot;, &quot;categoryId&quot;: &quot;/thumb_album&quot;, &quot;pageId&quot;: &quot;/detail/album/ndayyalh/albumtrack&quot;, &quot;albumId&quot; : &quot;20199158&quot;, &quot;noBodyPayload&quot;: true}"
+														title="재생 목록 담기" class="btn_add_list">재생 목록 담기</button>
+													<button type="button"
+														data-rake="{&quot;actionId&quot;: &quot;select_mylist&quot;, &quot;categoryId&quot;: &quot;/thumb_album&quot;, &quot;pageId&quot;: &quot;/detail/album/ndayyalh/albumtrack&quot;, &quot;albumId&quot; : &quot;20199158&quot;, &quot;noBodyPayload&quot;: true}"
+														title="내 리스트 담기" class="btn_add_playlist">내 리스트
+														담기</button>
+													<!---->
+													<!---->
+													<!---->
+													<!---->
+												</div>
+											</div>
+										</div></li>
+								</ul>
+								<!---->
+							</div>
+							<div class="paging_slide_arrow_w" style="visibility: hidden;">
+								<button title="이전 목록"
+									class="previous btn_paging_slide btn_previous">
+									<span>이전</span>
+								</button>
+								<button title="다음 목록"
+									class="forward btn_paging_slide btn_forward">
+									<span>다음</span>
+								</button>
+							</div>
+							<!---->
+						</section>
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<section class="section_content_wrap">
+							<div class="section_content_head">
+								<h3>
+									<a href="/search/artist?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0"
+										class="section_title" title="아티스트 더보기">아티스트</a>
+								</h3>
+								<!---->
+								<!---->
+							</div>
+							<div class="section_content">
+								<ul class="thumbnail_list artist_thumbnail_list sm_size ">
+									<li class=""><div class="thumbnail_item_area">
+											<div class="album_thumbnail type_artist sm_size">
+												<a
+													href="/detail/artist/hzayiiy/track?sortType=POPULARITY&amp;roleType=ALL"
+													class="link_thumbnail" title="IU 자세히보기"
+													style="background-image: url(&quot;https://cdn.music-flo.com/image/album/589/331/01/04/401331589_5c9d3935.jpg?1553807670745/dims/resize/500x500/quality/90&quot;);"></a>
+												<button title="IU 듣기" class="btn_thumbnail_play">IU
+													듣기</button>
+											</div>
+											<a
+												href="/detail/artist/hzayiiy/track?sortType=POPULARITY&amp;roleType=ALL"
+												class="album_title_text align-center"><span>
+													<!--fragment#14692bca27d#head-->IU<!--fragment#14692bca27d#tail-->
+											</span></a> <a
+												href="/detail/artist/hzayiiy/track?sortType=POPULARITY&amp;roleType=ALL"
+												class="artist_title_text align-center"><span><em>솔로</em></span></a>
+										</div></li>
+									<li class=""><div class="thumbnail_item_area">
+											<div class="album_thumbnail type_artist sm_size">
+												<a
+													href="/detail/artist/hdadoozl/track?sortType=POPULARITY&amp;roleType=ALL"
+													class="link_thumbnail" title="아이유브이 (IUV) 자세히보기"
+													style="background-image: url(&quot;https://cdn.music-flo.com/image/artist/440/101/03/04/403101440_5ca0ccd3.jpg?1554042111807/dims/resize/500x/quality/90&quot;);"></a>
+												<button title="아이유브이 (IUV) 듣기" class="btn_thumbnail_play">아이유브이
+													(IUV) 듣기</button>
+											</div>
+											<a
+												href="/detail/artist/hdadoozl/track?sortType=POPULARITY&amp;roleType=ALL"
+												class="album_title_text align-center"><span>
+													<!--fragment#d6cafcca90#head-->
+													<em fragment="d6cafcca90" class="search_keyword">아이유</em>브이
+													(IUV)<!--fragment#d6cafcca90#tail-->
+											</span></a> <a
+												href="/detail/artist/hdadoozl/track?sortType=POPULARITY&amp;roleType=ALL"
+												class="artist_title_text align-center"><span><em>듀오</em><em
+													class="artist_subtext_2nd">여성</em></span></a>
+										</div></li>
+									<li class=""><div class="thumbnail_item_area">
+											<div class="album_thumbnail type_artist sm_size">
+												<a
+													href="/detail/artist/ediyeinli/track?sortType=POPULARITY&amp;roleType=ALL"
+													class="link_thumbnail" title="KCIYoo 자세히보기"
+													style="background-image: url(&quot;https://cdn.music-flo.com/image/artist/253/943/03/04/403943253_5deddf72.jpg?1575870322634/dims/resize/500x500/quality/90&quot;);"></a>
+												<button title="KCIYoo 듣기" class="btn_thumbnail_play">KCIYoo
+													듣기</button>
+											</div>
+											<a
+												href="/detail/artist/ediyeinli/track?sortType=POPULARITY&amp;roleType=ALL"
+												class="album_title_text align-center"><span>
+													<!--fragment#c5596d538a#head-->KCIYoo<!--fragment#c5596d538a#tail-->
+											</span></a> <a
+												href="/detail/artist/ediyeinli/track?sortType=POPULARITY&amp;roleType=ALL"
+												class="artist_title_text align-center"><span><em>솔로</em></span></a>
+										</div></li>
+								</ul>
+								<!---->
+							</div>
+							<div class="paging_slide_arrow_w" style="visibility: hidden;">
+								<button title="이전 목록"
+									class="previous btn_paging_slide ARTIST_btn_previous">
+									<span>이전</span>
+								</button>
+								<button title="다음 목록"
+									class="forward btn_paging_slide ARTIST_btn_forward">
+									<span>다음</span>
+								</button>
+							</div>
+							<!---->
+						</section>
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<section class="section_content_wrap">
+							<div class="section_content_head">
+								<h3>
+									<a href="/search/theme?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0"
+										class="section_title" title="테마리스트 더보기">테마리스트</a>
+								</h3>
+								<!---->
+								<!---->
+							</div>
+							<div class="section_content">
+								<ul class="thumbnail_list   ">
+									<li class=""><div class="thumbnail_item_area">
+											<div class="album_thumbnail type_playlist sm_size">
+												<a href="/detail/channel/izzhz" class="link_thumbnail"
+													title="1회 - 아이유와 함께 'Love poem' 자세히보기"><img
+													src="https://cdn.music-flo.com/poc/p/image/channel/rep/20210121/61fe137d27d442939de3b3d62b7daca1.jpg"
+													width="157" height="157" alt="1회 - 아이유와 함께 'Love poem'"></a>
+												<button title="1회 - 아이유와 함께 'Love poem' 듣기"
+													class="btn_thumbnail_play">1회 - 아이유와 함께 'Love
+													poem' 듣기</button>
+											</div>
+											<a href="/detail/channel/izzhz" class="album_title_text"><span>
+													<!--fragment#12a02f74977#head-->1회 - <em
+													fragment="12a02f74977" class="search_keyword">아이유</em>와 함께
+													'Love poem'<!--fragment#12a02f74977#tail-->
+											</span></a> <a href="/detail/channel/izzhz" class="artist_title_text"><span>5곡</span></a>
+										</div></li>
+									<li class=""><div class="thumbnail_item_area">
+											<div class="album_thumbnail type_playlist sm_size">
+												<a href="/detail/channel/nozyo" class="link_thumbnail"
+													title="아이유 [Love Poem] 서울 공연 셋 리스트 자세히보기"><img
+													src="https://cdn.music-flo.com/image/album/955/200/04/04/404200955_5dd24da4.jpg?1574063525861/dims/resize/500x500/quality/90"
+													width="157" height="157" alt="아이유 [Love Poem] 서울 공연 셋 리스트"></a>
+												<button title="아이유 [Love Poem] 서울 공연 셋 리스트 듣기"
+													class="btn_thumbnail_play">아이유 [Love Poem] 서울 공연 셋
+													리스트 듣기</button>
+											</div>
+											<a href="/detail/channel/nozyo" class="album_title_text"><span>
+													<!--fragment#dc0d3580eb#head-->
+													<em fragment="dc0d3580eb" class="search_keyword">아이유</em>
+													[Love Poem] 서울 공연 셋 리스트<!--fragment#dc0d3580eb#tail-->
+											</span></a> <a href="/detail/channel/nozyo" class="artist_title_text"><span>32곡</span></a>
+										</div></li>
+									<li class=""><div class="thumbnail_item_area">
+											<div class="album_thumbnail type_playlist sm_size">
+												<a href="/detail/channel/nhoie" class="link_thumbnail"
+													title="너와 나의 싱어송라이터, 아이유 자세히보기"><img
+													src="https://cdn.music-flo.com/image/album/764/590/04/04/404590764_5eb2590b.jpg?1588746508049/dims/resize/500x500/quality/90"
+													width="157" height="157" alt="너와 나의 싱어송라이터, 아이유"></a>
+												<button title="너와 나의 싱어송라이터, 아이유 듣기"
+													class="btn_thumbnail_play">너와 나의 싱어송라이터, 아이유 듣기</button>
+											</div>
+											<a href="/detail/channel/nhoie" class="album_title_text"><span>
+													<!--fragment#16fc7bd2fac#head-->너와 나의 싱어송라이터, <em
+													fragment="16fc7bd2fac" class="search_keyword">아이유</em>
+												<!--fragment#16fc7bd2fac#tail-->
+											</span></a> <a href="/detail/channel/nhoie" class="artist_title_text"><span>23곡</span></a>
+										</div></li>
+									<li class=""><div class="thumbnail_item_area">
+											<div class="album_thumbnail type_playlist sm_size">
+												<a href="/detail/channel/nynei" class="link_thumbnail"
+													title="샤워할 때 따라 부르기 좋은 발라드 자세히보기"><img
+													src="https://cdn.music-flo.com/image/album/132/408/02/04/402408132_5c9f769d.jpg?1553954462674/dims/resize/500x500/quality/90"
+													width="157" height="157" alt="샤워할 때 따라 부르기 좋은 발라드"></a>
+												<button title="샤워할 때 따라 부르기 좋은 발라드 듣기"
+													class="btn_thumbnail_play">샤워할 때 따라 부르기 좋은 발라드 듣기</button>
+											</div>
+											<a href="/detail/channel/nynei" class="album_title_text"><span>
+													<!--fragment#1201b6123f6#head-->샤워할 때 따라 부르기 좋은 발라드<!--fragment#1201b6123f6#tail-->
+											</span></a> <a href="/detail/channel/nynei" class="artist_title_text"><span>15곡</span></a>
+										</div></li>
+									<li class=""><div class="thumbnail_item_area">
+											<div class="album_thumbnail type_playlist sm_size">
+												<a href="/detail/channel/iilad" class="link_thumbnail"
+													title="가을과 겨울의 경계에서 너가 생각나는 밤 자세히보기"><img
+													src="https://cdn.music-flo.com/image/album/602/943/02/04/402943602_5ceb852f.jpg?1558938928109/dims/resize/500x500/quality/90"
+													width="157" height="157" alt="가을과 겨울의 경계에서 너가 생각나는 밤"></a>
+												<button title="가을과 겨울의 경계에서 너가 생각나는 밤 듣기"
+													class="btn_thumbnail_play">가을과 겨울의 경계에서 너가 생각나는 밤
+													듣기</button>
+											</div>
+											<a href="/detail/channel/iilad" class="album_title_text"><span>
+													<!--fragment#11736657fe9#head-->가을과 겨울의 경계에서 너가 생각나는 밤<!--fragment#11736657fe9#tail-->
+											</span></a> <a href="/detail/channel/iilad" class="artist_title_text"><span>20곡</span></a>
+										</div></li>
+								</ul>
+								<!---->
+							</div>
+							<div class="paging_slide_arrow_w" style="visibility: hidden;">
+								<button title="이전 목록"
+									class="previous btn_paging_slide CHNL_btn_previous">
+									<span>이전</span>
+								</button>
+								<button title="다음 목록"
+									class="forward btn_paging_slide CHNL_btn_forward">
+									<span>다음</span>
+								</button>
+							</div>
+							<!---->
+						</section>
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<!---->
+						<div class="section_content_wrap">
+							<div class="section_content_head">
+								<h3>
+									<a href="/search/lyrics?keyword=%EC%95%84%EC%9D%B4%EC%9C%A0"
+										class="section_title" title="가사 더보기">가사</a>
+								</h3>
+							</div>
+							<table class="track_list_table">
+								<caption>아이유 가사 검색 결과 목록</caption>
+								<colgroup>
+									<col width="42" data-cell="체크박스">
+									<!---->
+									<!---->
+									<!---->
+									<col width="*" data-cell="곡/가사">
+									<col width="196" data-cell="아티스트">
+									<!---->
+									<col width="215" data-cell="앨범">
+									<!---->
+									<!---->
+									<!---->
+									<!---->
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col"><input id="searchLyricsAllSelect"
+											type="checkbox" name="전체 곡 선택하기" class="inp_check_square">
+											<label for="searchLyricsAllSelect"><span
+												class="hidden">전체 곡 선택하기</span></label></th>
+										<!---->
+										<!---->
+										<!---->
+										<th scope="col" class="info">곡/가사</th>
+										<th scope="col" class="artist">아티스트</th>
+										<!---->
+										<th scope="col" class="album">앨범</th>
+										<!---->
+										<!---->
+										<!---->
+										<!---->
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="">
+										<td class="select"><input id="searchLyricsSelect1"
+											type="checkbox" name="1번째 곡 선택하기"
+											data-rake="{&quot;actionId&quot;: &quot;select&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;2719386&quot;, &quot;trackName&quot;: &quot;달빛바다&quot;, &quot;state&quot;: &quot;ON&quot;}"
+											class="inp_check_square"> <label
+											for="searchLyricsSelect1"><span class="hidden">1번째
+													곡 선택하기</span></label></td>
+										<!---->
+										<!---->
+										<!---->
+										<td class="info"><label for="searchLyricsSelect1"><span
+												class="hidden">1번째 곡 선택하기</span></label>
+											<div class="info_wrap type_lyrics">
+												<div class="thumb">
+													<a href="/detail/album/iizeez/albumtrack" class=""
+														data-rake="{&quot;actionId&quot;: &quot;more_album&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;albumId&quot;:&quot;336446&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"><img
+														alt="'Summer Story' 앨범 이미지"
+														data-src="https://cdn.music-flo.com/image/album/449/098/00/04/400098449_5c9f77ef.jpg?1553954799968/dims/resize/140x140/quality/90"
+														src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														lazy="loading"> <!----></a>
+												</div>
+												<div class="txt_area">
+													<button type="button">
+														<!---->
+														<p class="tit">
+															<!---->
+															<!---->
+															<strong>
+																<!--fragment#de267b9750#head-->달빛바다<!--fragment#de267b9750#tail-->
+															</strong>
+															<!---->
+														</p>
+													</button>
+													<a href="/detail/track/noayihz/details" class=""><p
+															class="album">
+															<!---->
+															<!--fragment#343f737e32#head-->
+															Yeah It's summer 어디라도 좋아 Falling love 오늘은 기어코 어디든지 가보자 이
+															여름 다 가기 전에 워우예에 물결이 들리고 풀이 많은 곳이 어때 솔직히 너랑은 어디라도 난 좋아
+															달빛바다 닮은 저 하늘 조각배처럼 예쁜 저 별들 Only for you 달빛 한 스푼 별빛 두 방울을
+															우리 추억에 담는 이 여름 달빛바다 Hey You Just a feeling Just a
+															dreaming 바람을 따라서 가는거야 All right 내일은 기어코 다른 데서 눈 뜨자 젤 먼저 해
+															뜨는 데서 워우예에 어어어 부서진 파도에 무지개도 볼지 몰라 솔직히 너랑은 무얼 봐도 난 좋아 달빛바다
+															닮은 저 하늘 조각배처럼 예쁜 저 별들 Only for you 달빛 한 스푼 별빛 두 방울을 우리
+															추억에 담는 이 여름 달빛바다 Beautiful moon night 시원한 바다로 함께 떠나 보는건
+															어때 Yes 너와 함께라면 OK 내년 여름에도 우린 함께일거야 두 손을 꼭 잡고 오늘 얘길 나누게 될
+															걸 물빛하늘 닮은 저 바다 구름같은 파도가 밀려와 Only for you 여름마다 쌓인 추억들이
+															걸음마다 밟히는 이 여름 달빛바다
+															<!--fragment#343f737e32#tail-->
+															<!---->
+														</p></a>
+												</div>
+											</div></td>
+										<td class="artist"><label for="searchLyricsSelect1"><span
+												class="hidden">1번째 곡 선택하기</span></label>
+											<p>
+												<span class="artist_link_w"><span><span
+														artist="[object Object]" index="0" class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class=""
+															data-rake="{&quot;actionId&quot;: &quot;more_artist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;2719386&quot;, &quot;artistId&quot;: &quot;아이유 (IU)&quot;}">
+																<!--fragment#26c58d5cbf#head-->
+																<em fragment="26c58d5cbf" class="search_keyword">아이유</em>
+																(IU)<!--fragment#26c58d5cbf#tail-->
+														</a>
+													</span><span artist="[object Object]" index="1"
+														class="artist_link"><span class="artist_link_and">&amp;</span>
+															<a
+															href="/detail/artist/hdainleh/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;more_artist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;2719386&quot;, &quot;artistId&quot;: &quot;피에스타&quot;}">
+																<!--fragment#1562b424114#head-->피에스타<!--fragment#1562b424114#tail-->
+														</a></span></span></span> <span class="tooltip">
+													<!--fragment#e2d3798c13#head-->
+													<em fragment="e2d3798c13" class="search_keyword">아이유</em>
+													(IU) &amp; 피에스타<!--fragment#e2d3798c13#tail-->
+												</span>
+											</p></td>
+										<!---->
+										<td class="album"><a
+											href="/detail/album/iizeez/albumtrack" class="">
+												<!--fragment#11193eb1acd#head-->Summer Story<!--fragment#11193eb1acd#tail-->
+										</a></td>
+										<!---->
+										<!---->
+										<!---->
+										<!---->
+									</tr>
+									<tr class="">
+										<td class="select"><input id="searchLyricsSelect2"
+											type="checkbox" name="2번째 곡 선택하기"
+											data-rake="{&quot;actionId&quot;: &quot;select&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;443615873&quot;, &quot;trackName&quot;: &quot;Celebrity&quot;, &quot;state&quot;: &quot;ON&quot;}"
+											class="inp_check_square"> <label
+											for="searchLyricsSelect2"><span class="hidden">2번째
+													곡 선택하기</span></label></td>
+										<!---->
+										<!---->
+										<!---->
+										<td class="info"><label for="searchLyricsSelect2"><span
+												class="hidden">2번째 곡 선택하기</span></label>
+											<div class="info_wrap type_lyrics">
+												<div class="thumb">
+													<a href="/detail/album/edloooanl/albumtrack" class=""
+														data-rake="{&quot;actionId&quot;: &quot;more_album&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;albumId&quot;:&quot;405777125&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"><img
+														alt="'Celebrity' 앨범 이미지"
+														data-src="https://cdn.music-flo.com/image/v2/album/125/777/05/04/405777125_6010e16c_o.jpg?1611719022486/dims/resize/140x140/quality/90"
+														src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														lazy="loading"> <!----></a>
+												</div>
+												<div class="txt_area">
+													<button type="button">
+														<!---->
+														<p class="tit">
+															<!---->
+															<!---->
+															<strong>
+																<!--fragment#d337f830c4#head-->Celebrity<!--fragment#d337f830c4#tail-->
+															</strong>
+															<!---->
+														</p>
+													</button>
+													<a href="/detail/track/eeizalhoi/details" class=""><p
+															class="album">
+															<!---->
+															<!--fragment#14c4ec4890d#head-->
+															세상의 모서리 구부정하게 커버린 골칫거리 outsider 걸음걸이, 옷차림 이어폰 너머 play
+															list 음악까지 다 minor 넌 모르지 떨군 고개 위 환한 빛 조명이 어딜 비추는지 느려도 좋으니
+															결국 알게 되길 The one and only You are my celebrity 잊지마 넌 흐린
+															어둠 사이 왼손으로 그린 별 하나 보이니 그 유일함이 얼마나 아름다운지 말야 You are my
+															celebrity celebrity You are my celebrity 지쳐버린 표정 마치 전원을
+															꺼놓은 듯이 심장소린 too quiet 네가 가진 반짝거림 상상력, identity 까지 모조리
+															diet 넌 모르지 아직 못다 핀 널 위해 쓰여진 오래된 사랑시 헤매도 좋으니 웃음 짓게 되길 The
+															one and only You are my celebrity 잊지마 넌 흐린 어둠 사이 왼손으로 그린
+															별 하나 보이니 그 유일함이 얼마나 아름다운지 말야 You are my celebrity 발자국마다
+															이어진 별자리 그 서투른 걸음이 새겨놓은 밑그림 오롯이 너를 만나러 가는 길 그리로 가면 돼 점선을
+															따라 잊지마 이 오랜 겨울 사이 언 틈으로 피울 꽃 하나 보이니 하루 뒤 봄이 얼마나 아름다울지 말야
+															You are my celebrity celebrity You are my celebrity
+															<!--fragment#14c4ec4890d#tail-->
+															<!---->
+														</p></a>
+												</div>
+											</div></td>
+										<td class="artist"><label for="searchLyricsSelect2"><span
+												class="hidden">2번째 곡 선택하기</span></label>
+											<p>
+												<span class="artist_link_w"><span><span
+														artist="[object Object]" index="0" class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;more_artist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;443615873&quot;, &quot;artistId&quot;: &quot;아이유 (IU)&quot;}">
+																<!--fragment#1508944a6ac#head-->
+																<em fragment="1508944a6ac" class="search_keyword">아이유</em>
+																(IU)<!--fragment#1508944a6ac#tail-->
+														</a>
+													</span></span></span> <span class="tooltip">
+													<!--fragment#c4a4c7dbe9#head-->
+													<em fragment="c4a4c7dbe9" class="search_keyword">아이유</em>
+													(IU)<!--fragment#c4a4c7dbe9#tail-->
+												</span>
+											</p></td>
+										<!---->
+										<td class="album"><a
+											href="/detail/album/edloooanl/albumtrack" class="">
+												<!--fragment#1078c0b2e9f#head-->Celebrity<!--fragment#1078c0b2e9f#tail-->
+										</a></td>
+										<!---->
+										<!---->
+										<!---->
+										<!---->
+									</tr>
+									<tr class="">
+										<td class="select"><input id="searchLyricsSelect3"
+											type="checkbox" name="3번째 곡 선택하기"
+											data-rake="{&quot;actionId&quot;: &quot;select&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433090157&quot;, &quot;trackName&quot;: &quot;Love poem&quot;, &quot;state&quot;: &quot;ON&quot;}"
+											class="inp_check_square"> <label
+											for="searchLyricsSelect3"><span class="hidden">3번째
+													곡 선택하기</span></label></td>
+										<!---->
+										<!---->
+										<!---->
+										<td class="info"><label for="searchLyricsSelect3"><span
+												class="hidden">3번째 곡 선택하기</span></label>
+											<div class="info_wrap type_lyrics">
+												<div class="thumb">
+													<a href="/detail/album/edenddyll/albumtrack" class=""
+														data-rake="{&quot;actionId&quot;: &quot;more_album&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;albumId&quot;:&quot;404200955&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"><img
+														alt="'Love poem' 앨범 이미지"
+														data-src="https://cdn.music-flo.com/image/album/955/200/04/04/404200955_5dd24da4.jpg?1574063525861/dims/resize/140x140/quality/90"
+														src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														lazy="loading"> <!----></a>
+												</div>
+												<div class="txt_area">
+													<button type="button">
+														<!---->
+														<p class="tit">
+															<!---->
+															<!---->
+															<strong>
+																<!--fragment#15031d09f44#head-->Love poem<!--fragment#15031d09f44#tail-->
+															</strong>
+															<!---->
+														</p>
+													</button>
+													<a href="/detail/track/eiidydalo/details" class=""><p
+															class="album">
+															<!---->
+															<!--fragment#124f430c056#head-->
+															누구를 위해 누군가 기도하고 있나 봐 숨죽여 쓴 사랑시가 낮게 들리는 듯해 너에게로 선명히 날아가 늦지
+															않게 자리에 닿기를 I’ll be there 홀로 걷는 너의 뒤에 Singing till the end
+															그치지 않을 이 노래 아주 잠시만 귀 기울여 봐 유난히 긴 밤을 걷는 널 위해 부를게 또 한 번 너의
+															세상에 별이 지고 있나 봐 숨죽여 삼킨 눈물이 여기 흐르는 듯해 할 말을 잃어 고요한 마음에 기억처럼
+															들려오는 목소리 I’ll be there 홀로 걷는 너의 뒤에 Singing till the end
+															그치지 않을 이 노래 아주 커다란 숨을 쉬어 봐 소리 내 우는 법을 잊은 널 위해 부를게 (다시 걸어갈
+															수 있도록) 부를게 (다시 사랑할 수 있도록) Here i am 지켜봐 나를, 난 절대 Singing
+															till the end 멈추지 않아 이 노래 너의 긴 밤이 끝나는 그날 고개를 들어 바라본 그곳에
+															있을게
+															<!--fragment#124f430c056#tail-->
+															<!---->
+														</p></a>
+												</div>
+											</div></td>
+										<td class="artist"><label for="searchLyricsSelect3"><span
+												class="hidden">3번째 곡 선택하기</span></label>
+											<p>
+												<span class="artist_link_w"><span><span
+														artist="[object Object]" index="0" class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;more_artist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433090157&quot;, &quot;artistId&quot;: &quot;아이유 (IU)&quot;}">
+																<!--fragment#b0f6623c8c#head-->
+																<em fragment="b0f6623c8c" class="search_keyword">아이유</em>
+																(IU)<!--fragment#b0f6623c8c#tail-->
+														</a>
+													</span></span></span> <span class="tooltip">
+													<!--fragment#e011cd7413#head-->
+													<em fragment="e011cd7413" class="search_keyword">아이유</em>
+													(IU)<!--fragment#e011cd7413#tail-->
+												</span>
+											</p></td>
+										<!---->
+										<td class="album"><a
+											href="/detail/album/edenddyll/albumtrack" class="">
+												<!--fragment#4db8111407#head-->Love poem<!--fragment#4db8111407#tail-->
+										</a></td>
+										<!---->
+										<!---->
+										<!---->
+										<!---->
+									</tr>
+									<tr class="">
+										<td class="select"><input id="searchLyricsSelect4"
+											type="checkbox" name="4번째 곡 선택하기"
+											data-rake="{&quot;actionId&quot;: &quot;select&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433468306&quot;, &quot;trackName&quot;: &quot;Blueming&quot;, &quot;state&quot;: &quot;ON&quot;}"
+											class="inp_check_square"> <label
+											for="searchLyricsSelect4"><span class="hidden">4번째
+													곡 선택하기</span></label></td>
+										<!---->
+										<!---->
+										<!---->
+										<td class="info"><label for="searchLyricsSelect4"><span
+												class="hidden">4번째 곡 선택하기</span></label>
+											<div class="info_wrap type_lyrics">
+												<div class="thumb">
+													<a href="/detail/album/edenddyll/albumtrack" class=""
+														data-rake="{&quot;actionId&quot;: &quot;more_album&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;albumId&quot;:&quot;404200955&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"><img
+														alt="'Love poem' 앨범 이미지"
+														data-src="https://cdn.music-flo.com/image/album/955/200/04/04/404200955_5dd24da4.jpg?1574063525861/dims/resize/140x140/quality/90"
+														src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														lazy="loading"> <!----></a>
+												</div>
+												<div class="txt_area">
+													<button type="button">
+														<!---->
+														<p class="tit">
+															<!---->
+															<!---->
+															<strong>
+																<!--fragment#a35676865b#head-->Blueming<!--fragment#a35676865b#tail-->
+															</strong>
+															<!---->
+														</p>
+													</button>
+													<a href="/detail/track/eiiezhidz/details" class=""><p
+															class="album">
+															<!---->
+															<!--fragment#13496ebecb8#head-->
+															뭐해?‘라는 두 글자에 ‘네가 보고 싶어’ 나의 속마음을 담아 우 이모티콘 하나하나 속에 달라지는 내
+															미묘한 심리를 알까 우 아니 바쁘지 않아 nothing no no 잠들어 있지 않아 insomnia
+															nia nia 지금 다른 사람과 함께이지 않아 응, 나도 너를 생각 중 우리의 네모 칸은 bloom
+															엄지손가락으로 장미꽃을 피워 향기에 취할 것 같아 우 오직 둘만의 비밀의 정원 I feel bloom
+															I feel bloom I feel bloom 너에게 한 송이를 더 보내 밤샘 작업으로 업데이트
+															흥미로운 이 작품의 지은이 that’s me 우 어쩜 이 관계의 클라이맥스 2막으로 넘어가기엔 지금이
+															good timing 우 같은 맘인 걸 알아 realize la lize 말을 고르지 말아 just
+															reply la la ly 조금 장난스러운 나의 은유에 네 해석이 궁금해 우리의 색은 gray and
+															blue 엄지손가락으로 말풍선을 띄워 금세 터질 것 같아 우 호흡이 가빠져 어지러워 I feel
+															blue. I feel blue. I feel blue. 너에게 가득히 채워
+
+															띄어쓰기없이보낼게사랑인것같애 백만송이장미꽃을, 나랑피워볼래? 꽃잎의 색은 우리 마음 가는 대로 칠해
+															시들 때도 예쁘게 우리의 네모 칸은 bloom 엄지손가락으로 장미꽃을 피워 향기에 취할 것 같아 우
+															오직 둘만의 비밀의 정원 I feel bloom I feel bloom I feel bloom 너에게
+															한 송이를 더 보내
+															<!--fragment#13496ebecb8#tail-->
+															<!---->
+														</p></a>
+												</div>
+											</div></td>
+										<td class="artist"><label for="searchLyricsSelect4"><span
+												class="hidden">4번째 곡 선택하기</span></label>
+											<p>
+												<span class="artist_link_w"><span><span
+														artist="[object Object]" index="0" class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;more_artist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;433468306&quot;, &quot;artistId&quot;: &quot;아이유 (IU)&quot;}">
+																<!--fragment#d4631754fd#head-->
+																<em fragment="d4631754fd" class="search_keyword">아이유</em>
+																(IU)<!--fragment#d4631754fd#tail-->
+														</a>
+													</span></span></span> <span class="tooltip">
+													<!--fragment#129c2935850#head-->
+													<em fragment="129c2935850" class="search_keyword">아이유</em>
+													(IU)<!--fragment#129c2935850#tail-->
+												</span>
+											</p></td>
+										<!---->
+										<td class="album"><a
+											href="/detail/album/edenddyll/albumtrack" class="">
+												<!--fragment#10dc11350d7#head-->Love poem<!--fragment#10dc11350d7#tail-->
+										</a></td>
+										<!---->
+										<!---->
+										<!---->
+										<!---->
+									</tr>
+									<tr class="">
+										<td class="select"><input id="searchLyricsSelect5"
+											type="checkbox" name="5번째 곡 선택하기"
+											data-rake="{&quot;actionId&quot;: &quot;select&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;30598121&quot;, &quot;trackName&quot;: &quot;밤편지&quot;, &quot;state&quot;: &quot;ON&quot;}"
+											class="inp_check_square"> <label
+											for="searchLyricsSelect5"><span class="hidden">5번째
+													곡 선택하기</span></label></td>
+										<!---->
+										<!---->
+										<!---->
+										<td class="info"><label for="searchLyricsSelect5"><span
+												class="hidden">5번째 곡 선택하기</span></label>
+											<div class="info_wrap type_lyrics">
+												<div class="thumb">
+													<a href="/detail/album/nddhydyn/albumtrack" class=""
+														data-rake="{&quot;actionId&quot;: &quot;more_album&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;albumId&quot;:&quot;20089092&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"><img
+														alt="'밤편지' 앨범 이미지"
+														data-src="https://cdn.music-flo.com/image/album/931/304/02/04/402304931.jpg/dims/resize/140x140/quality/90"
+														src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														lazy="loading"> <!----></a>
+												</div>
+												<div class="txt_area">
+													<button type="button">
+														<!---->
+														<p class="tit">
+															<!---->
+															<!---->
+															<strong>
+																<!--fragment#2a6fcccc27#head-->밤편지<!--fragment#2a6fcccc27#tail-->
+															</strong>
+															<!---->
+														</p>
+													</button>
+													<a href="/detail/track/idlyhana/details" class=""><p
+															class="album">
+															<!---->
+															<!--fragment#16e92d007e3#head-->
+															이 밤 그날의 반딧불을 당신의 창 가까이 보낼게요 음 사랑한다는 말이에요 나 우리의 첫 입맞춤을 떠올려
+															그럼 언제든 눈을 감고 음 가장 먼 곳으로 가요 난 파도가 머물던 모래 위에 적힌 글씨처럼 그대가 멀리
+															사라져 버릴 것 같아 늘 그리워 그리워 여기 내 마음속에 모든 말을 다 꺼내어 줄 순 없지만 사랑한다는
+															말이에요 어떻게 나에게 그대란 행운이 온 걸까 지금 우리 함께 있다면 아 얼마나 좋을까요 난 파도가
+															머물던 모래 위에 적힌 글씨처럼 그대가 멀리 사라져 버릴 것 같아 또 그리워 더 그리워 나의 일기장
+															안에 모든 말을 다 꺼내어 줄 순 없지만 사랑한다는 말 이 밤 그날의 반딧불을 당신의 창 가까이
+															띄울게요 음 좋은 꿈 이길 바라요
+															<!--fragment#16e92d007e3#tail-->
+															<!---->
+														</p></a>
+												</div>
+											</div></td>
+										<td class="artist"><label for="searchLyricsSelect5"><span
+												class="hidden">5번째 곡 선택하기</span></label>
+											<p>
+												<span class="artist_link_w"><span><span
+														artist="[object Object]" index="0" class="artist_link">
+															<!----> <a
+															href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+															class="last"
+															data-rake="{&quot;actionId&quot;: &quot;more_artist&quot;, &quot;categoryId&quot;: &quot;/track_list&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;:&quot;30598121&quot;, &quot;artistId&quot;: &quot;아이유 (IU)&quot;}">
+																<!--fragment#17586f7d649#head-->
+																<em fragment="17586f7d649" class="search_keyword">아이유</em>
+																(IU)<!--fragment#17586f7d649#tail-->
+														</a>
+													</span></span></span> <span class="tooltip">
+													<!--fragment#111992d5d02#head-->
+													<em fragment="111992d5d02" class="search_keyword">아이유</em>
+													(IU)<!--fragment#111992d5d02#tail-->
+												</span>
+											</p></td>
+										<!---->
+										<td class="album"><a
+											href="/detail/album/nddhydyn/albumtrack" class="">
+												<!--fragment#1272b8b2f93#head-->밤편지<!--fragment#1272b8b2f93#tail-->
+										</a></td>
+										<!---->
+										<!---->
+										<!---->
+										<!---->
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!---->
+						<!---->
+					</div>
+					<div id="infinityScrollTrigger"></div>
+					<!---->
+				</div>
+				<footer id="footer" role="contentinfo" class="">
+					<div class="footer_inner">
+						<div class="flo_fnb">
+							<ul>
+								<li><a href="/intro" class="">FLO 소개</a></li>
+								<li><a href="/help/notice/1" class="">공지사항</a></li>
+								<li><a href="/help/faq/0/1" class="">고객센터</a></li>
+								<li><a href="/download/pc/app" class="">FLO 플레이어 다운로드</a></li>
+							</ul>
+						</div>
+						<div class="social_area">
+							<ul>
+								<li><a href="https://www.facebook.com/music.flo.official/"
+									target="_blank" class="btn-facebook"><span class="hidden">facebook
+											바로 가기</span></a></li>
+								<li><a
+									href="https://instagram.com/flo.music.official?igshid=t5zfyar4ceeu"
+									target="_blank" class="btn-instagram"><span class="hidden">instagram
+											바로 가기</span></a></li>
+								<li><a
+									href="https://www.youtube.com/channel/UCaYRc3On_-Sxqm8C6NKChjQ"
+									target="_blank" class="btn-youtube"><span class="hidden">youtube
+											바로 가기</span></a></li>
+								<li><a href="https://twitter.com/flo_official"
+									target="_blank" class="btn-twitter"><span class="hidden">twitter
+											바로 가기</span></a></li>
+							</ul>
+						</div>
+						<div class="policy_area">
+							<ul>
+								<li><a href="http://www.dreamuscompany.com/"
+									target="_blank">회사소개</a></li>
+								<li><a href="#">이용약관</a></li>
+								<li><a href="#"><em>개인정보 처리방침</em></a></li>
+								<li><a href="#">청소년 보호정책</a></li>
+								<li><a
+									href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2008321012130201039"
+									target="_blank">사업자정보 확인</a></li>
+							</ul>
+						</div>
+						<address>
+							<div class="inner">
+								<div class="address_top">
+									<span>대표이사 : 이기영</span> <span>이메일 : flo@music-flo.com</span> <span>사업자
+										등록번호&nbsp;: 214-86-29288</span> <span>통신판매업 신고번호&nbsp;:
+										2008-서울서초-1039</span>
+								</div>
+								<div class="address_bottom">
+									<em class="blind">주소 및 대표번호</em> <span>플로하우스 : 서울특별시 서초구
+										강남대로 311 드림플러스 15F</span><span>대표전화: 1599-6034</span><br>
+									<span>아이리버 : 서울특별시 서초구 방배로 18길 5</span><span>대표전화:
+										1577-5557</span>
+								</div>
+							</div>
+						</address>
+						<p class="copyright">
+							<span>(주)드림어스컴퍼니</span>ALL RIGHTS RESERVED
+						</p>
+						<p class="browser_support">본 사이트는 Chrome 및 IE Edge 브라우저에서 사용
+							가능합니다.</p>
+						<!---->
+					</div>
+				</footer>
+			</section>
+		</div>
+		<!---->
+		<!---->
+		<div class="playlist_ct single_view" style="display: none;">
+			<h3 class="tit_playlist">
+				재생목록
+				<button type="button"
+					data-rake="{&quot;actionId&quot;: &quot;move_setting&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"
+					class="btn_playlist_edit">재생환경 설정</button>
+			</h3>
+			<div class="playlist_header_util">
+				<ul class="player_util">
+					<li><button type="button"
+							data-rake="{&quot;actionId&quot;: &quot;search&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"
+							class="btn_search">검색</button></li>
+					<li><button type="button"
+							data-rake="{&quot;actionId&quot;: &quot;load_mylist&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"
+							class="btn_mylist">내 리스트 가져오기</button></li>
+					<!---->
+				</ul>
+				<ul class="list_edit">
+					<li><button type="button"
+							data-rake="{&quot;actionId&quot;: &quot;edit_mode&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"
+							class="">편집</button></li>
+					<li><button type="button"
+							data-rake="{&quot;actionId&quot;: &quot;filter_group&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;state&quot;: &quot;OFF&quot;}"
+							class="btn_playlist disabled">그룹접기</button></li>
+				</ul>
+				<!---->
+			</div>
+			<div id="PITEM_SINGLE_WRAPPER" class="playlist_scroll">
+				<div class="playlist_section">
+					<span><div id="PITEM_SINGLE_433468306_1616123926178"
+							class="playlist_item track_area pause">
+							<!---->
+							<div class="track_item">
+								<a href="/detail/album/edenddyll/albumtrack" class="thumb"
+									style="background-image: url(&quot;https://cdn.music-flo.com/image/album/955/200/04/04/404200955_5dd24da4.jpg?1574063525861/dims/resize/500x500/quality/90&quot;);"><span
+									class="hidden">Love poem</span></a>
+								<button type="button" draggable="false"
+									data-rake="{&quot;actionId&quot;: &quot;order_song&quot;, &quot;state&quot;:&quot;pause&quot; , &quot;categoryId&quot;: &quot;playlist&quot;, &quot;pageId&quot;: &quot;/player&quot;}"
+									class="btn_track_select">
+									<div class="track_info">
+										<p class="title">
+											<span style="-translateX-to: 0px; - -animation-duration: 0s;">Blueming</span>
+										</p>
+										<p class="artist">아이유 (IU)</p>
+									</div>
+								</button>
+							</div>
+							<div class="playlist_util">
+								<button type="button" draggable="false"
+									data-rake="{&quot;actionId&quot;: &quot;selected_mylist&quot;, &quot;categoryId&quot;: &quot;/playlist&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;: &quot;433468306&quot;}"
+									class="btn_add_mylist">보관함에 추가하기</button>
+								<button type="button" draggable="false"
+									data-except="openTrackMore"
+									data-rake="{&quot;actionId&quot;: &quot;more&quot;, &quot;categoryId&quot;: &quot;/playlist&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"
+									class="btn_playlist_more">더보기</button>
+								<!---->
+								<!---->
+								<!---->
+								<!---->
+								<!---->
+							</div>
+						</div></span>
+				</div>
+			</div>
+			<button
+				data-rake="{&quot;actionId&quot;: &quot;close&quot;, &quot;categoryId&quot;: &quot;/playlist&quot;, &quot;pageId&quot;: &quot;/search/all&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"
+				class="btn_playlist_close">재생목록 닫기</button>
+			<!---->
+		</div>
+		<div class="player_ct mini">
+			<section class="playbar_wrap">
+				<div class="playbar_ct">
+					<div class="track_area hide_lyrics">
+						<div class="thumb"
+							style="background-image: url(&quot;https://cdn.music-flo.com/image/album/955/200/04/04/404200955_5dd24da4.jpg?1574063525861/dims/resize/500x500/quality/90&quot;);">
+							<span class="hidden">앨범 제목</span>
+						</div>
+						<div class="track_info">
+							<p class="title">
+								<!---->
+								Blueming
+							</p>
+							<p class="artist">
+								<!---->
+								아이유 (IU)
+							</p>
+						</div>
+						<div
+							data-rake="{&quot;actionId&quot;:&quot;lyric&quot;,&quot;categoryId&quot;:&quot;/main&quot;,&quot;pageId&quot;:&quot;/player&quot;,&quot;trackId&quot;:&quot;433468306&quot;,&quot;trackName&quot;:&quot;Blueming&quot;,&quot;state&quot;:&quot;hide&quot;}"
+							class="lyrics">
+							<div class="txt">
+								<p class="lyric-line">뭐해?라는 두 글자에</p>
+								<p class="lyric-line">네가 보고 싶어 나의 속마음을 담아 우</p>
+								<p class="lyric-line">이모티콘 하나하나 속에</p>
+								<p class="lyric-line">달라지는 내 미묘한 심리를 알까 우</p>
+								<p class="lyric-line">아니 바쁘지 않아 nothing no no</p>
+								<p class="lyric-line">잠들어 있지 않아 insomnia nia nia</p>
+								<p class="lyric-line">지금 다른 사람과 함께이지 않아</p>
+								<p class="lyric-line">응 나도 너를 생각 중</p>
+								<p class="lyric-line">우리의 네모 칸은 bloom</p>
+								<p class="lyric-line">엄지손가락으로 장미꽃을 피워</p>
+								<p class="lyric-line">향기에 취할 것 같아 우</p>
+								<p class="lyric-line">오직 둘만의 비밀의 정원</p>
+								<p class="lyric-line">I feel bloom I feel bloom I feel bloom
+								</p>
+								<p class="lyric-line">너에게 한 송이를 더 보내</p>
+								<p class="lyric-line">밤샘 작업으로 업데이트</p>
+								<p class="lyric-line">흥미로운 이 작품의 지은이 that's me 우</p>
+								<p class="lyric-line">어쩜 이 관계의 클라이맥스</p>
+								<p class="lyric-line">2막으로 넘어가기엔 지금이 good timing 우</p>
+								<p class="lyric-line">같은 맘인 걸 알아 realize la lize</p>
+								<p class="lyric-line">말을 고르지 말아 just reply la la ly</p>
+								<p class="lyric-line">조금 장난스러운 나의 은유에</p>
+								<p class="lyric-line">네 해석이 궁금해</p>
+								<p class="lyric-line">우리의 색은 gray and blue</p>
+								<p class="lyric-line">엄지손가락으로 말풍선을 띄워</p>
+								<p class="lyric-line">금세 터질 것 같아 우</p>
+								<p class="lyric-line">호흡이 가빠져 어지러워</p>
+								<p class="lyric-line">I feel blue. I feel blue. I feel blue.
+								</p>
+								<p class="lyric-line">너에게 가득히 채워</p>
+								<p class="lyric-line">띄어쓰기없이보낼게사랑인것같애</p>
+								<p class="lyric-line">백만송이장미꽃을 나랑피워볼래?</p>
+								<p class="lyric-line">꽃잎의 색은 우리 마음 가는 대로 칠해</p>
+								<p class="lyric-line">시들 때도 예쁘게</p>
+								<p class="lyric-line">우리의 네모 칸은 bloom</p>
+								<p class="lyric-line">엄지손가락으로 장미꽃을 피워</p>
+								<p class="lyric-line">향기에 취할 것 같아 우</p>
+								<p class="lyric-line">오직 둘만의 비밀의 정원</p>
+								<p class="lyric-line">I feel bloom I feel bloom I feel bloom
+								</p>
+								<p class="lyric-line">너에게 한 송이를 더 보내</p>
+							</div>
+							<button type="button" role="button" class="btn_lyrics_focus"
+								style="">가사 위치 바로 가기</button>
+							<button type="button" role="button" class="btn_lyrics_close">
+								<i></i>가사닫기
+							</button>
+						</div>
+					</div>
+					<div class="player_controller">
+						<div class="playtime">
+							<input type="range" min="0" max="100" title="재생 시간 조절 바"
+								role="slider" disabled="disabled" class="progress"> <span
+								class="time_current"><span class="hidden">현재 재생된
+									시간</span> 00:00 </span> <span class="time_all"><span class="hidden">전체
+									재생 시간</span> 00:00 </span>
+						</div>
+						<div class="control_area">
+							<button type="button" role="button" title="Enable repeat"
+								data-rake="{&quot;actionId&quot;:&quot;repeat&quot;,&quot;categoryId&quot;:&quot;/mini&quot;,&quot;pageId&quot;:&quot;/player&quot;,&quot;trackId&quot;:&quot;433468306&quot;,&quot;trackName&quot;:&quot;Blueming&quot;,&quot;state&quot;:&quot;&quot;}"
+								class="btn-player-repeat">
+								반복 재생 설정<span>반복 재생이 설정되었습니다</span>
+							</button>
+							<button type="button" role="button" title="Previous"
+								data-rake="{&quot;actionId&quot;:&quot;prev&quot;,&quot;categoryId&quot;:&quot;/mini&quot;,&quot;pageId&quot;:&quot;/player&quot;,&quot;trackId&quot;:&quot;&quot;}"
+								class="btn-player-previous">이전 곡 재생하기</button>
+							<!---->
+							<button type="button" role="button" title="Play"
+								data-rake="{&quot;actionId&quot;:&quot;&quot;,&quot;categoryId&quot;:&quot;/mini&quot;,&quot;pageId&quot;:&quot;/player&quot;,&quot;trackId&quot;:&quot;433468306&quot;,&quot;trackName&quot;:&quot;Blueming&quot;}"
+								class="icon-player btn-player-play">현재 곡이 정지되어 있습니다</button>
+							<button type="button" role="button" title="Next"
+								data-rake="{&quot;actionId&quot;:&quot;next&quot;,&quot;categoryId&quot;:&quot;/mini&quot;,&quot;pageId&quot;:&quot;/player&quot;,&quot;trackId&quot;:&quot;&quot;}"
+								class="btn-player-next">다음 곡 재생하기</button>
+							<button type="button" role="button" title="Enable shuffle"
+								data-rake="{&quot;actionId&quot;:&quot;shuffle&quot;,&quot;categoryId&quot;:&quot;/mini&quot;,&quot;pageId&quot;:&quot;/player&quot;,&quot;trackId&quot;:&quot;433468306&quot;,&quot;trackName&quot;:&quot;Blueming&quot;,&quot;state&quot;:&quot;OFF&quot;}"
+								class="btn-player-shuffle">
+								곡 재생 방법 설정<span>셔틀 재생이 설정되었습니다</span>
+							</button>
+						</div>
+						<div class="volume_area">
+							<button type="button" role="button" class="btn_volume">
+								볼륨 조절하기</button>
+							<div class="progress_area">
+								<div class="range_area">
+									<input type="range" min="0" max="100" title="볼륨 조절 바"
+										data-rake="{&quot;mute&quot;:&quot;OFF&quot;,&quot;volume&quot;:&quot;DOWN&quot;,&quot;actionId&quot;:&quot;volume&quot;,&quot;categoryId&quot;:&quot;/mini&quot;,&quot;pageId&quot;:&quot;/player&quot;,&quot;trackId&quot;:&quot;433468306&quot;,&quot;trackName&quot;:&quot;Blueming&quot;}"
+										class="progress"> <i class="volume_handle"
+										style="left: 50%;"></i>
+								</div>
+							</div>
+						</div>
+						<div class="util_area">
+							<button type="button" role="button"
+								data-rake="{&quot;actionId&quot;:&quot;like&quot;,&quot;categoryId&quot;:&quot;/mini&quot;,&quot;pageId&quot;:&quot;/player&quot;,&quot;trackId&quot;:&quot;433468306&quot;,&quot;trackName&quot;:&quot;Blueming&quot;,&quot;state&quot;:&quot;ON&quot;}"
+								class="btn_like">좋아요</button>
+							<button type="button" role="button" class="btn_dislike">이
+								곡 안듣기</button>
+							<button type="button" role="button"
+								data-rake="{&quot;actionId&quot;:&quot;selected_mylist&quot;,&quot;categoryId&quot;:&quot;/main&quot;,&quot;pageId&quot;:&quot;/player&quot;,&quot;trackId&quot;:&quot;433468306&quot;,&quot;trackName&quot;:&quot;Blueming&quot;}"
+								class="btn_add">내 리스트에 담기</button>
+							<button type="button" role="button"
+								data-rake="{&quot;actionId&quot;:&quot;&quot;,&quot;categoryId&quot;:&quot;/mini&quot;,&quot;pageId&quot;:&quot;/player&quot;,&quot;state&quot;:&quot;close&quot;,&quot;noBodyPayload&quot;:&quot;true&quot;}"
+								class="btn_open_list">재생 목록 열기</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="FLO_PLAYER_PLAYLIST_WRAPPER" class="playlist_wrap">
+				<div class="playlist_inner">
+					<div class="playlist_header_tab">
+						<ul>
+							<li tab="[object Object]" class="type_playlist on"><button
+									type="button"
+									data-rake="{&quot;actionId&quot;: &quot;playlist&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;:true}">
+									재생목록</button></li>
+							<li tab="[object Object]" class="type_artist"><button
+									type="button"
+									data-rake="{&quot;actionId&quot;: &quot;artist&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;:true}">
+									아티스트</button></li>
+							<li tab="[object Object]" class="type_similar"><button
+									type="button"
+									data-rake="{&quot;actionId&quot;: &quot;similar&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;:true}">
+									유사곡</button></li>
+						</ul>
+					</div>
+					<div class="playlist_ct playlistInPlayer">
+						<!---->
+						<div class="playlist_header_util">
+							<ul class="player_util">
+								<li><button type="button"
+										data-rake="{&quot;actionId&quot;: &quot;search&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"
+										class="btn_search">검색</button></li>
+								<li><button type="button"
+										data-rake="{&quot;actionId&quot;: &quot;load_mylist&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"
+										class="btn_mylist">내 리스트 가져오기</button></li>
+								<!---->
+							</ul>
+							<ul class="list_edit">
+								<li><button type="button"
+										data-rake="{&quot;actionId&quot;: &quot;edit_mode&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"
+										class="">편집</button></li>
+								<li><button type="button"
+										data-rake="{&quot;actionId&quot;: &quot;filter_group&quot;, &quot;categoryId&quot;: &quot;/main&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;state&quot;: &quot;OFF&quot;}"
+										class="btn_playlist disabled">그룹접기</button></li>
+							</ul>
+							<!---->
+						</div>
+						<div id="PITEM_SINGLE_WRAPPER" class="playlist_scroll">
+							<div class="playlist_section">
+								<span><div id="PITEM_433468306_1616123926178"
+										class="playlist_item track_area pause">
+										<!---->
+										<div class="track_item">
+											<a href="/detail/album/edenddyll/albumtrack" class="thumb"
+												style="background-image: url(&quot;https://cdn.music-flo.com/image/album/955/200/04/04/404200955_5dd24da4.jpg?1574063525861/dims/resize/500x500/quality/90&quot;);"><span
+												class="hidden">Love poem</span></a>
+											<button type="button" draggable="false"
+												data-rake="{&quot;actionId&quot;: &quot;order_song&quot;, &quot;state&quot;:&quot;pause&quot; , &quot;categoryId&quot;: &quot;playlist&quot;, &quot;pageId&quot;: &quot;/player&quot;}"
+												class="btn_track_select">
+												<div class="track_info">
+													<p class="title">
+														<span
+															style="-translateX-to: 0px; - -animation-duration: 0s;">Blueming</span>
+													</p>
+													<p class="artist">아이유 (IU)</p>
+												</div>
+											</button>
+										</div>
+										<div class="playlist_util">
+											<button type="button" draggable="false"
+												data-rake="{&quot;actionId&quot;: &quot;selected_mylist&quot;, &quot;categoryId&quot;: &quot;/playlist&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;trackId&quot;: &quot;433468306&quot;}"
+												class="btn_add_mylist">보관함에 추가하기</button>
+											<button type="button" draggable="false"
+												data-except="openTrackMore"
+												data-rake="{&quot;actionId&quot;: &quot;more&quot;, &quot;categoryId&quot;: &quot;/playlist&quot;, &quot;pageId&quot;: &quot;/player&quot;, &quot;noBodyPayload&quot;: &quot;true&quot;}"
+												class="btn_playlist_more">더보기</button>
+											<!---->
+											<!---->
+											<!---->
+											<!---->
+											<!---->
+										</div>
+									</div></span>
+							</div>
+						</div>
+						<!---->
+						<!---->
+					</div>
+					<!---->
+				</div>
+			</section>
+			<!---->
+		</div>
+		<!---->
+		<!---->
+	</div>
+	<script src="/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script>
+	<script src="/kakao.min.js"></script>
+	<script
+		src="https://pay-auth.sk-pay.co.kr/pages/js/v3/lib/crypto/encryptedUserAgent.js"></script>
+	<script src="https://pay-auth.sk-pay.co.kr/pages/skpay/SKpaySDK.js"></script>
+	<script src="https://nsp.pay.naver.com/sdk/js/naverpay.min.js"></script>
+	<script src="/app.js?03a5bc04c560bf1a5f5e"></script>
+	<script src="/chunk-vendors.js?03a5bc04c560bf1a5f5e"></script>
+</body>
+</html>

@@ -6,8 +6,16 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="buttonPush"/>
+		<item key="selection" value="script"/>
 		<list key="findhistory">
+			<item value="script"/>
+			<item value="class"/>
+			<item value="track_list_table"/>
+			<item value="https://cdn.music-flo.com/image/artist/875/043/03/04/403043875_5eb4b748.jpg?1588901704962/dims/resize/x500/quality/90"/>
+			<item value="search_section_top_badge"/>
+			<item value="jsp"/>
+			<item value="each"/>
+			<item value="submit"/>
 			<item value="buttonPush"/>
 			<item value="player.ball1"/>
 			<item value="clicked_value"/>
@@ -15,24 +23,16 @@
 			<item value="document.getElementById(&quot;btnarea&quot;).innerHTML"/>
 			<item value="btnHtml"/>
 			<item value="alert"/>
-			<item value="MAIN1614150015_2466"/>
-			<item value="MAIN1614149601_2467"/>
-			<item value="MAIN1614149163_2465"/>
-			<item value="MAIN1613956657_2461"/>
-			<item value="1372397444_main_series_04.jpg"/>
-			<item value="../images/common/btm_menu.gif"/>
-			<item value="&lt;tbody&gt;"/>
-			<item value="../images/common/btm_line.gif"/>
 		</list>
 		<list key="replacehistory">
 			<item value=" "/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="991"/>
-		<item key="DIALOG_Y_ORIGIN" value="121"/>
-		<item key="DIALOG_WIDTH" value="288"/>
-		<item key="DIALOG_HEIGHT" value="391"/>
-		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+		<item key="DIALOG_X_ORIGIN" value="13"/>
+		<item key="DIALOG_Y_ORIGIN" value="141"/>
+		<item key="DIALOG_WIDTH" value="340"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 </section>
