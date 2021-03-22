@@ -356,7 +356,7 @@ element.style {
     text-overflow: ellipsis;
     white-space: nowrap;
     display: inline-block;
-    max-width: 89%;
+    /* max-width: 89%; */
     font-weight: 400;
 }
 
@@ -389,3 +389,76 @@ element.style {
     table-layout: fixed;
 }
 
+.section_search .tab{
+    margin-top: 25px;
+    overflow: hidden;
+    position: relative;
+    padding-right: 40px;
+    height: 32px;
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.tab ul {
+    display: inline-block;
+    margin-top: -10px!important;
+    font-size: 0;
+    vertical-align: top;
+}
+
+.tab .swiper-slide {
+    width: auto;
+}
+
+.on .btn_tab_normal {
+    color: #fff;
+    background-color: #3f3fff;
+    border-color: #3f3fff;
+}
+
+.btn_tab_normal {
+    height: 32px;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,.2);
+    vertical-align: top;
+    font-size: 16px;
+    border: 0;
+}
+
+button {
+    outline: none;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    vertical-align: middle;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.blindd {
+    display: none;
+}
